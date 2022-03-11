@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="teB-Yz-zIT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--기록-->
+        <scene sceneID="9xm-bf-00W">
+            <objects>
+                <viewController id="b00-cc-QpD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1C-8I-w5i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IC8-wW-Y9R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="기록" image="chart.bar" catalog="system" id="Rvm-qw-29X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZC-zN-lVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="402"/>
+        </scene>
+        <!--러닝-->
+        <scene sceneID="2Gb-hI-vJe">
+            <objects>
+                <viewController id="UES-ZJ-kHg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mGA-YJ-c4a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xbJ-nL-n7g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="러닝" image="lungs" catalog="system" id="ABW-Jf-edJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCg-wo-xnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="402"/>
+        </scene>
+        <!--미션-->
+        <scene sceneID="0q1-lg-00I">
+            <objects>
+                <viewController id="imH-8k-tfB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oKE-Mv-eNB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FMB-tr-ifp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="미션" image="calendar.badge.plus" catalog="system" id="1Kh-cZ-SXz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6k-28-DQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="402"/>
+        </scene>
+        <!--친구-->
+        <scene sceneID="hkc-qQ-ZaP">
+            <objects>
+                <viewController id="mzE-a6-VEL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4j9-BO-mR9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dUU-LL-oDX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="친구" image="person.2" catalog="system" id="S1X-yN-cZp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4M-lq-7Ud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2107" y="402"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="TiE-qD-8Xa">
+            <objects>
+                <viewController id="cxJ-iu-Cjb" customClass="MainViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TfL-8q-Plt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palvin님,달려볼까요?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WN-Rp-fv1">
+                                <rect key="frame" x="20" y="44" width="150" height="115.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="BZc-hd-7hG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="24u-cd-Q5p">
+                                <rect key="frame" x="20.5" y="243.5" width="373" height="224"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHT-fg-4DC">
+                                <rect key="frame" x="20" y="167.5" width="150" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdi-Ri-14Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="76"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="모여런">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6i-sz-RBw">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="76"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="개인런">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PEw-gB-63P">
+                                <rect key="frame" x="0.0" y="543.5" width="414" height="269.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dg0-GY-Gny">
+                                    <size key="itemSize" width="361" height="219"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainViewController_RunningGuide_Cell" id="PO0-5p-wR1" customClass="MainViewController_RunningGuide_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25.5" width="361" height="219"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="219"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68c-eJ-JLl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="219"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="68c-eJ-JLl" secondAttribute="bottom" id="0lK-qL-7rM"/>
+                                            <constraint firstItem="68c-eJ-JLl" firstAttribute="leading" secondItem="PO0-5p-wR1" secondAttribute="leading" symbolic="YES" id="IFA-g2-2cH"/>
+                                            <constraint firstAttribute="trailing" secondItem="68c-eJ-JLl" secondAttribute="trailing" symbolic="YES" id="ako-ov-g47"/>
+                                            <constraint firstItem="68c-eJ-JLl" firstAttribute="top" secondItem="PO0-5p-wR1" secondAttribute="top" id="t8o-sI-Dmr"/>
+                                        </constraints>
+                                        <size key="customSize" width="361" height="219"/>
+                                        <connections>
+                                            <outlet property="RunningGuide_Cell_ImageView" destination="68c-eJ-JLl" id="hSm-Ke-XU3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="cxJ-iu-Cjb" id="FAt-We-mDo"/>
+                                    <outlet property="delegate" destination="cxJ-iu-Cjb" id="qfe-Mj-380"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="러닝 가이드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEj-ua-EQw">
+                                <rect key="frame" x="20" y="467.5" width="109.5" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zGm-c4-SdZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qEj-ua-EQw" firstAttribute="leading" secondItem="0WN-Rp-fv1" secondAttribute="leading" id="16z-ha-7dc"/>
+                            <constraint firstItem="zGm-c4-SdZ" firstAttribute="bottom" secondItem="PEw-gB-63P" secondAttribute="bottom" id="BnU-bf-Wn6"/>
+                            <constraint firstItem="0WN-Rp-fv1" firstAttribute="top" secondItem="zGm-c4-SdZ" secondAttribute="top" id="CDx-jn-d44"/>
+                            <constraint firstItem="24u-cd-Q5p" firstAttribute="height" secondItem="TfL-8q-Plt" secondAttribute="height" multiplier="0.25" id="DX7-pf-hMm"/>
+                            <constraint firstItem="PEw-gB-63P" firstAttribute="leading" secondItem="zGm-c4-SdZ" secondAttribute="leading" id="POr-uO-tQc"/>
+                            <constraint firstItem="qEj-ua-EQw" firstAttribute="height" secondItem="0WN-Rp-fv1" secondAttribute="height" multiplier="0.66" id="Rbb-Q0-eQo"/>
+                            <constraint firstItem="24u-cd-Q5p" firstAttribute="centerX" secondItem="zGm-c4-SdZ" secondAttribute="centerX" id="Rbj-Oj-Y1u"/>
+                            <constraint firstItem="aHT-fg-4DC" firstAttribute="top" secondItem="0WN-Rp-fv1" secondAttribute="bottom" constant="8" symbolic="YES" id="TgU-Co-trW"/>
+                            <constraint firstItem="24u-cd-Q5p" firstAttribute="width" secondItem="TfL-8q-Plt" secondAttribute="width" multiplier="0.9" id="Y2L-WK-eLv"/>
+                            <constraint firstItem="aHT-fg-4DC" firstAttribute="leading" secondItem="0WN-Rp-fv1" secondAttribute="leading" id="cbY-fS-fvW"/>
+                            <constraint firstItem="24u-cd-Q5p" firstAttribute="top" secondItem="aHT-fg-4DC" secondAttribute="bottom" id="d5n-9L-bjy"/>
+                            <constraint firstItem="aHT-fg-4DC" firstAttribute="height" secondItem="0WN-Rp-fv1" secondAttribute="height" multiplier="0.66" id="dUC-eL-oPa"/>
+                            <constraint firstItem="0WN-Rp-fv1" firstAttribute="height" secondItem="zGm-c4-SdZ" secondAttribute="height" multiplier="0.15" id="edC-sl-raL"/>
+                            <constraint firstItem="zGm-c4-SdZ" firstAttribute="trailing" secondItem="PEw-gB-63P" secondAttribute="trailing" id="hDc-Um-jgP"/>
+                            <constraint firstItem="PEw-gB-63P" firstAttribute="top" secondItem="qEj-ua-EQw" secondAttribute="bottom" id="jYJ-I9-MXB"/>
+                            <constraint firstItem="aHT-fg-4DC" firstAttribute="width" secondItem="0WN-Rp-fv1" secondAttribute="width" id="lQk-jN-rYj"/>
+                            <constraint firstItem="qEj-ua-EQw" firstAttribute="top" secondItem="24u-cd-Q5p" secondAttribute="bottom" id="spW-vv-Kf5"/>
+                            <constraint firstItem="0WN-Rp-fv1" firstAttribute="leading" secondItem="zGm-c4-SdZ" secondAttribute="leading" constant="20" id="uA4-n9-4yE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="TQQ-Y5-e1G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAW-JZ-CiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478.26086956521743" y="401.78571428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="O34-vL-KBt">
+            <objects>
+                <tabBarController id="teB-Yz-zIT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gDU-sy-2GV"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aga-Z1-orB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cxJ-iu-Cjb" kind="relationship" relationship="viewControllers" id="weq-iY-62f"/>
+                        <segue destination="b00-cc-QpD" kind="relationship" relationship="viewControllers" id="Atx-RC-Lqu"/>
+                        <segue destination="UES-ZJ-kHg" kind="relationship" relationship="viewControllers" id="rC1-PH-Lob"/>
+                        <segue destination="imH-8k-tfB" kind="relationship" relationship="viewControllers" id="SC0-tB-i0V"/>
+                        <segue destination="mzE-a6-VEL" kind="relationship" relationship="viewControllers" id="Tbj-ak-6TY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKH-4h-Yjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2.jpg" width="7360" height="4140"/>
+        <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="lungs" catalog="system" width="128" height="91"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
