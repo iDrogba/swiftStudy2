@@ -10,6 +10,8 @@
 		3F220E7127DE28DE000558DB /* SingleRun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F220E7027DE28DE000558DB /* SingleRun.storyboard */; };
 		3F220E7327DE2C8A000558DB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F220E7227DE2C8A000558DB /* TabBarController.swift */; };
 		3F220E7527DE2D48000558DB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F220E7427DE2D48000558DB /* Extension.swift */; };
+		3F220E7727DE38C1000558DB /* Group 273.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F220E7627DE38C0000558DB /* Group 273.png */; };
+		3F220E7927DE39C0000558DB /* Rectangle 142.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F220E7827DE39BF000558DB /* Rectangle 142.png */; };
 		3F2500D627DB2F0A00A676B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2500D527DB2F0A00A676B9 /* AppDelegate.swift */; };
 		3F2500D827DB2F0A00A676B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2500D727DB2F0A00A676B9 /* SceneDelegate.swift */; };
 		3F2500DA27DB2F0A00A676B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2500D927DB2F0A00A676B9 /* MainViewController.swift */; };
@@ -44,6 +46,8 @@
 		3F220E7027DE28DE000558DB /* SingleRun.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleRun.storyboard; sourceTree = "<group>"; };
 		3F220E7227DE2C8A000558DB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3F220E7427DE2D48000558DB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3F220E7627DE38C0000558DB /* Group 273.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 273.png"; sourceTree = "<group>"; };
+		3F220E7827DE39BF000558DB /* Rectangle 142.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 142.png"; sourceTree = "<group>"; };
 		3F2500D227DB2F0A00A676B9 /* MoYeoRunToy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoYeoRunToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2500D527DB2F0A00A676B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F2500D727DB2F0A00A676B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				3F2500DE27DB2F0B00A676B9 /* Assets.xcassets */,
 				3F25010927DB6AE100A676B9 /* 1.jpg */,
 				3F25010A27DB6AE100A676B9 /* 2.jpg */,
+				3F220E7627DE38C0000558DB /* Group 273.png */,
+				3F220E7827DE39BF000558DB /* Rectangle 142.png */,
 				3F2500E027DB2F0B00A676B9 /* LaunchScreen.storyboard */,
 				3F2500E327DB2F0B00A676B9 /* Info.plist */,
 			);
@@ -278,7 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F220E7927DE39C0000558DB /* Rectangle 142.png in Resources */,
 				3F2500E227DB2F0B00A676B9 /* LaunchScreen.storyboard in Resources */,
+				3F220E7727DE38C1000558DB /* Group 273.png in Resources */,
 				3F25010B27DB6AE100A676B9 /* 1.jpg in Resources */,
 				3F25010C27DB6AE100A676B9 /* 2.jpg in Resources */,
 				3F2500DF27DB2F0B00A676B9 /* Assets.xcassets in Resources */,

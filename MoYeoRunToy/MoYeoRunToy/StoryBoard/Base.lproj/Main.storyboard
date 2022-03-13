@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZC-zN-lVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="402"/>
+            <point key="canvasLocation" x="179.71014492753625" y="401.78571428571428"/>
         </scene>
         <!--러닝-->
         <scene sceneID="2Gb-hI-vJe">
@@ -35,8 +35,54 @@
                     <view key="view" contentMode="scaleToFill" id="mGA-YJ-c4a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="146" translatesAutoresizingMaskIntoConstraints="NO" id="SGL-Hf-gb9">
+                                <rect key="frame" x="44" y="216" width="318" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 인기있는 러닝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJo-nn-sUf">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7J-S2-ZLp">
+                                        <rect key="frame" x="280" y="0.0" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="b7J-S2-ZLp" secondAttribute="height" id="9Ze-br-u3a"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="312" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-6j-4PY">
+                                <rect key="frame" x="20" y="44" width="374" height="31"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 273.png" translatesAutoresizingMaskIntoConstraints="NO" id="vod-4T-VLZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vod-4T-VLZ" secondAttribute="height" id="qvJ-gu-45i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-Cv-afL">
+                                        <rect key="frame" x="343" y="0.0" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ggx-Cv-afL" secondAttribute="height" id="IRN-gm-Yc3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xbJ-nL-n7g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NTb-6j-4PY" firstAttribute="leading" secondItem="xbJ-nL-n7g" secondAttribute="leading" constant="20" id="4ZI-uw-fzL"/>
+                            <constraint firstItem="NTb-6j-4PY" firstAttribute="top" secondItem="xbJ-nL-n7g" secondAttribute="top" id="6Fu-nF-rYE"/>
+                            <constraint firstItem="xbJ-nL-n7g" firstAttribute="trailing" secondItem="NTb-6j-4PY" secondAttribute="trailing" constant="20" id="CZc-Nc-zUz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="러닝" id="ABW-Jf-edJ">
                         <imageReference key="image" image="lungs" catalog="system" symbolScale="medium"/>
@@ -44,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCg-wo-xnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="402"/>
+            <point key="canvasLocation" x="824.63768115942037" y="401.78571428571428"/>
         </scene>
         <!--미션-->
         <scene sceneID="0q1-lg-00I">
@@ -254,7 +300,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.jpg" width="3840" height="2160"/>
         <image name="2.jpg" width="7360" height="4140"/>
+        <image name="Group 273.png" width="25.25" height="30.75"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="house" catalog="system" width="128" height="106"/>
