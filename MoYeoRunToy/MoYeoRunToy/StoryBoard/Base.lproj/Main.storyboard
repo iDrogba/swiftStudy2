@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -19,7 +20,9 @@
                         <viewLayoutGuide key="safeArea" id="IC8-wW-Y9R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="기록" image="chart.bar" catalog="system" id="Rvm-qw-29X"/>
+                    <tabBarItem key="tabBarItem" title="기록" id="Rvm-qw-29X">
+                        <imageReference key="image" image="chart.bar" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZC-zN-lVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,7 +38,9 @@
                         <viewLayoutGuide key="safeArea" id="xbJ-nL-n7g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="러닝" image="lungs" catalog="system" id="ABW-Jf-edJ"/>
+                    <tabBarItem key="tabBarItem" title="러닝" id="ABW-Jf-edJ">
+                        <imageReference key="image" image="lungs" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCg-wo-xnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +56,9 @@
                         <viewLayoutGuide key="safeArea" id="FMB-tr-ifp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="미션" image="calendar.badge.plus" catalog="system" id="1Kh-cZ-SXz"/>
+                    <tabBarItem key="tabBarItem" title="미션" id="1Kh-cZ-SXz">
+                        <imageReference key="image" image="calendar.badge.plus" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6k-28-DQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +74,9 @@
                         <viewLayoutGuide key="safeArea" id="dUU-LL-oDX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="친구" image="person.2" catalog="system" id="S1X-yN-cZp"/>
+                    <tabBarItem key="tabBarItem" title="친구" id="S1X-yN-cZp">
+                        <imageReference key="image" image="person.2" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4M-lq-7Ud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,7 +222,9 @@
                             <constraint firstItem="0WN-Rp-fv1" firstAttribute="leading" secondItem="zGm-c4-SdZ" secondAttribute="leading" constant="20" id="uA4-n9-4yE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="TQQ-Y5-e1G"/>
+                    <tabBarItem key="tabBarItem" title="홈" id="TQQ-Y5-e1G">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAW-JZ-CiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,7 +233,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="O34-vL-KBt">
             <objects>
-                <tabBarController id="teB-Yz-zIT" sceneMemberID="viewController">
+                <tabBarController id="teB-Yz-zIT" customClass="TabBarController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="gDU-sy-2GV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aga-Z1-orB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
