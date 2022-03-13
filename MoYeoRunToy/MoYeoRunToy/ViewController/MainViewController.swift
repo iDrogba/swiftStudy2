@@ -11,7 +11,12 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
         
+    }
+    
+    func setUI() {
+       
     }
 
 
@@ -38,13 +43,21 @@ extension MainViewController: UICollectionViewDataSource {
 
 //셀 크기
 extension MainViewController: UICollectionViewDelegateFlowLayout {
-    
+        
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let cellWidth = collectionView.bounds.size.width * 0.85
-        let cellHeight = collectionView.bounds.size.height
-        
+        let cellWidth = collectionView.bounds.size.width * 0.8
+        let cellHeight = collectionView.bounds.size.height * 0.9
+                
         return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
     }
     
 }
@@ -58,5 +71,6 @@ class MainViewController_RunningGuide_Cell: UICollectionViewCell {
     
     @IBOutlet weak var RunningGuide_Cell_ImageView: UIImageView!
 
+    
     
 }

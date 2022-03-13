@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -117,31 +118,46 @@
                                 <rect key="frame" x="0.0" y="524" width="414" height="269"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dg0-GY-Gny">
-                                    <size key="itemSize" width="333" height="197"/>
+                                    <size key="itemSize" width="358" height="209"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainViewController_RunningGuide_Cell" id="PO0-5p-wR1" customClass="MainViewController_RunningGuide_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="36" width="333" height="197"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MainViewController_RunningGuide_Cell" id="PO0-5p-wR1" customClass="MainViewController_RunningGuide_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="358" height="209"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="333" height="197"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OmF-5N-nBj">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68c-eJ-JLl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="197"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="209"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5분 달리기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eux-im-Pb2">
+                                                    <rect key="frame" x="18" y="161.5" width="95" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회복 러닝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8t-cp-o8z">
+                                                    <rect key="frame" x="284" y="170" width="56" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="68c-eJ-JLl" secondAttribute="bottom" id="0lK-qL-7rM"/>
-                                            <constraint firstItem="68c-eJ-JLl" firstAttribute="leading" secondItem="PO0-5p-wR1" secondAttribute="leading" symbolic="YES" id="IFA-g2-2cH"/>
-                                            <constraint firstAttribute="trailing" secondItem="68c-eJ-JLl" secondAttribute="trailing" symbolic="YES" id="ako-ov-g47"/>
-                                            <constraint firstItem="68c-eJ-JLl" firstAttribute="top" secondItem="PO0-5p-wR1" secondAttribute="top" id="t8o-sI-Dmr"/>
-                                        </constraints>
-                                        <size key="customSize" width="333" height="197"/>
+                                            <constraints>
+                                                <constraint firstItem="C8t-cp-o8z" firstAttribute="trailing" secondItem="68c-eJ-JLl" secondAttribute="centerX" multiplier="1.9" id="KXP-nc-KSn"/>
+                                                <constraint firstItem="eux-im-Pb2" firstAttribute="leading" secondItem="68c-eJ-JLl" secondAttribute="centerX" multiplier="0.1" id="LXq-aQ-Fvx"/>
+                                                <constraint firstItem="68c-eJ-JLl" firstAttribute="top" secondItem="OmF-5N-nBj" secondAttribute="top" id="MXN-Bd-CFh"/>
+                                                <constraint firstItem="C8t-cp-o8z" firstAttribute="bottom" secondItem="68c-eJ-JLl" secondAttribute="centerY" multiplier="1.8" id="YQK-qX-M9v"/>
+                                                <constraint firstAttribute="bottom" secondItem="68c-eJ-JLl" secondAttribute="bottom" id="auQ-sS-s2l"/>
+                                                <constraint firstAttribute="trailing" secondItem="68c-eJ-JLl" secondAttribute="trailing" id="jgb-og-yBb"/>
+                                                <constraint firstItem="eux-im-Pb2" firstAttribute="bottom" secondItem="68c-eJ-JLl" secondAttribute="centerY" multiplier="1.8" id="nRZ-3t-RBM"/>
+                                                <constraint firstItem="68c-eJ-JLl" firstAttribute="leading" secondItem="OmF-5N-nBj" secondAttribute="leading" id="tDq-so-hHy"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="RunningGuide_Cell_ImageView" destination="68c-eJ-JLl" id="hSm-Ke-XU3"/>
                                         </connections>
@@ -158,6 +174,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자유 달리기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI7-lq-GiF">
+                                <rect key="frame" x="41.5" y="386" width="100" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원하는 만큼 자유롭게 달려보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9y-R8-hxM">
+                                <rect key="frame" x="41.5" y="412.5" width="194" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zGm-c4-SdZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,10 +194,13 @@
                             <constraint firstItem="aHT-fg-4DC" firstAttribute="height" secondItem="zGm-c4-SdZ" secondAttribute="height" multiplier="0.08" id="7qR-sd-Ab8"/>
                             <constraint firstItem="zGm-c4-SdZ" firstAttribute="bottom" secondItem="PEw-gB-63P" secondAttribute="bottom" constant="20" id="BnU-bf-Wn6"/>
                             <constraint firstItem="24u-cd-Q5p" firstAttribute="height" secondItem="TfL-8q-Plt" secondAttribute="height" multiplier="0.25" id="DX7-pf-hMm"/>
+                            <constraint firstItem="CI7-lq-GiF" firstAttribute="leading" secondItem="V9y-R8-hxM" secondAttribute="leading" id="F8X-Ep-wZg"/>
                             <constraint firstItem="PEw-gB-63P" firstAttribute="leading" secondItem="zGm-c4-SdZ" secondAttribute="leading" id="POr-uO-tQc"/>
+                            <constraint firstItem="V9y-R8-hxM" firstAttribute="top" secondItem="CI7-lq-GiF" secondAttribute="bottom" id="RMr-qb-5Bg"/>
                             <constraint firstItem="24u-cd-Q5p" firstAttribute="centerX" secondItem="zGm-c4-SdZ" secondAttribute="centerX" id="Rbj-Oj-Y1u"/>
                             <constraint firstItem="aHT-fg-4DC" firstAttribute="top" secondItem="0WN-Rp-fv1" secondAttribute="bottom" constant="8" symbolic="YES" id="TgU-Co-trW"/>
                             <constraint firstItem="24u-cd-Q5p" firstAttribute="width" secondItem="TfL-8q-Plt" secondAttribute="width" multiplier="0.9" id="Y2L-WK-eLv"/>
+                            <constraint firstItem="V9y-R8-hxM" firstAttribute="leading" secondItem="24u-cd-Q5p" secondAttribute="centerX" multiplier="0.2" id="bGA-hC-lR8"/>
                             <constraint firstItem="aHT-fg-4DC" firstAttribute="leading" secondItem="0WN-Rp-fv1" secondAttribute="leading" id="cbY-fS-fvW"/>
                             <constraint firstItem="24u-cd-Q5p" firstAttribute="top" secondItem="aHT-fg-4DC" secondAttribute="bottom" id="d5n-9L-bjy"/>
                             <constraint firstItem="qEj-ua-EQw" firstAttribute="height" secondItem="TfL-8q-Plt" secondAttribute="height" multiplier="0.09" id="eVJ-Va-rVb"/>
@@ -177,6 +208,7 @@
                             <constraint firstItem="zGm-c4-SdZ" firstAttribute="trailing" secondItem="PEw-gB-63P" secondAttribute="trailing" id="hDc-Um-jgP"/>
                             <constraint firstItem="PEw-gB-63P" firstAttribute="top" secondItem="qEj-ua-EQw" secondAttribute="bottom" id="jYJ-I9-MXB"/>
                             <constraint firstItem="aHT-fg-4DC" firstAttribute="width" secondItem="0WN-Rp-fv1" secondAttribute="width" id="lQk-jN-rYj"/>
+                            <constraint firstItem="V9y-R8-hxM" firstAttribute="bottom" secondItem="24u-cd-Q5p" secondAttribute="centerY" multiplier="1.3" id="nGO-i3-aqc"/>
                             <constraint firstItem="qEj-ua-EQw" firstAttribute="top" secondItem="24u-cd-Q5p" secondAttribute="bottom" id="spW-vv-Kf5"/>
                             <constraint firstItem="0WN-Rp-fv1" firstAttribute="leading" secondItem="zGm-c4-SdZ" secondAttribute="leading" constant="20" id="uA4-n9-4yE"/>
                         </constraints>
