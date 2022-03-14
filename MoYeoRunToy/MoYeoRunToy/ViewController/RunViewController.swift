@@ -27,6 +27,7 @@ class RunViewController: UIViewController{
 
 class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
+    //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -40,25 +41,29 @@ class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource
         return cell
     }
     
+    //UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = collectionView.bounds.width * 0.8
-        let height = collectionView.bounds.height * 0.9
+        let height = collectionView.bounds.height * 0.95
         
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+    }
+    
 }
-
 class RunViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
 }
 
 
-
-
 class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    
+        
+    //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -67,31 +72,42 @@ class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_NewMission_CollectionView_Cell", for: indexPath) as? RunViewController_NewMission_CollectionView_Cell else {
             return UICollectionViewCell()
         }
-        cell.imageView.image = UIImage(named: "2.jpg")
+        cell.imageView.image = UIImage(named: "1.jpg")
         
         return cell
     }
     
+    //UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = collectionView.bounds.width * 0.4
-        let height = collectionView.bounds.height * 0.4
+        let width = collectionView.bounds.width * 0.49
+        let height = collectionView.bounds.height * 0.49
         
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        let width = collectionView.bounds.width * 0.49
+        
+        let totalWidth = width * 2
+        let totalSpacingWidth: CGFloat = 10
+        let leftInset = (collectionView.frame.width - CGFloat(totalWidth + totalSpacingWidth)) / 2
+        let rightInset = leftInset
+        
+        return UIEdgeInsets(top: 0, left: leftInset, bottom: 0, right: rightInset)
+        
+    }
+    
 }
-
 class RunViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
     @IBOutlet weak var imageView: UIImageView!
     
 }
 
 
-
-
-
 class RunViewController_LastRecord: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    
+    //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
@@ -105,15 +121,16 @@ class RunViewController_LastRecord: UIViewController,UICollectionViewDataSource,
         return cell
     }
     
+    //UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = collectionView.bounds.width * 0.9
-        let height = collectionView.bounds.height * 0.4
+        let width = collectionView.bounds.width
+        let height = collectionView.bounds.height * 0.49
         
         return CGSize(width: width, height: height)
     }
+    
 }
-
 class RunViewController_LastRecord_CollectionView_Cell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
