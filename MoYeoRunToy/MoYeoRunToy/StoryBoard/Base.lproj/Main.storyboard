@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIb-rv-saX">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIb-rv-saX">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFZ-UK-7fh">
@@ -89,13 +89,13 @@
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rth-sP-L3h">
-                                                <rect key="frame" x="0.0" y="974" width="414" height="410"/>
+                                                <rect key="frame" x="0.0" y="897" width="414" height="410.5"/>
                                                 <connections>
                                                     <segue destination="Njg-5Y-PC1" kind="embed" id="ah1-QL-pkk"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qb-A7-5Q6">
-                                                <rect key="frame" x="0.0" y="205" width="414" height="231"/>
+                                                <rect key="frame" x="0.0" y="128" width="414" height="231"/>
                                                 <connections>
                                                     <segue destination="ZGa-uZ-PRX" kind="embed" id="DMJ-kx-d39"/>
                                                 </connections>
@@ -367,34 +367,52 @@
             </objects>
             <point key="canvasLocation" x="825" y="-463"/>
         </scene>
-        <!--View Controller-->
+        <!--Run View Controller Now Popular-->
         <scene sceneID="i2C-97-ltG">
             <objects>
-                <viewController id="ZGa-uZ-PRX" sceneMemberID="viewController">
+                <viewController id="ZGa-uZ-PRX" customClass="RunViewController_NowPopular" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBf-fK-xDL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-UH-5Qq">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-UH-5Qq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="83M-IV-DLG">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="83M-IV-DLG">
                                     <size key="itemSize" width="361" height="153"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1fs-1C-X6P">
-                                        <rect key="frame" x="26.5" y="0.0" width="361" height="153"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RunViewController_NowPopular_CollectionView_Cell" id="1fs-1C-X6P" customClass="RunViewController_NowPopular_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="39" width="361" height="153"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kkF-WQ-Q2Y">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="153"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z8a-S2-4Ug">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="153"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Z8a-S2-4Ug" secondAttribute="bottom" id="1uB-iU-T92"/>
+                                                <constraint firstItem="Z8a-S2-4Ug" firstAttribute="leading" secondItem="kkF-WQ-Q2Y" secondAttribute="leading" id="64G-lP-6eN"/>
+                                                <constraint firstAttribute="trailing" secondItem="Z8a-S2-4Ug" secondAttribute="trailing" id="WQV-at-quj"/>
+                                                <constraint firstItem="Z8a-S2-4Ug" firstAttribute="top" secondItem="kkF-WQ-Q2Y" secondAttribute="top" id="cgF-pO-mk2"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="361" height="153"/>
+                                        <connections>
+                                            <outlet property="ImageView" destination="Z8a-S2-4Ug" id="bLr-rI-kEJ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZGa-uZ-PRX" id="wmg-go-DJd"/>
+                                    <outlet property="delegate" destination="ZGa-uZ-PRX" id="PhM-Z0-MaN"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -410,10 +428,10 @@
             </objects>
             <point key="canvasLocation" x="71.014492753623188" y="903.68303571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Run View Controller New Mission-->
         <scene sceneID="4ej-P3-lVE">
             <objects>
-                <viewController id="mKm-Ea-7pN" sceneMemberID="viewController">
+                <viewController id="mKm-Ea-7pN" customClass="RunViewController_NewMission" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LHO-Pr-uwk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,26 +449,44 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="전체 보기 &gt;"/>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W74-5x-ZmY">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W74-5x-ZmY">
                                 <rect key="frame" x="0.0" y="29" width="414" height="478"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZvF-Mx-BzF">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZvF-Mx-BzF">
                                     <size key="itemSize" width="162" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cEt-2m-5f0">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RunViewController_NewMission_CollectionView_Cell" id="cEt-2m-5f0" customClass="RunViewController_NewMission_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dwb-Kq-pWD">
                                             <rect key="frame" x="0.0" y="0.0" width="162" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E59-fk-RSt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E59-fk-RSt" firstAttribute="leading" secondItem="Dwb-Kq-pWD" secondAttribute="leading" id="9AG-30-IiT"/>
+                                                <constraint firstAttribute="bottom" secondItem="E59-fk-RSt" secondAttribute="bottom" id="HKW-f2-Q2Q"/>
+                                                <constraint firstItem="E59-fk-RSt" firstAttribute="top" secondItem="Dwb-Kq-pWD" secondAttribute="top" id="KU8-kC-oT0"/>
+                                                <constraint firstAttribute="trailing" secondItem="E59-fk-RSt" secondAttribute="trailing" id="Xuw-YR-LBo"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="162" height="150"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="E59-fk-RSt" id="gIK-Lj-AbL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="mKm-Ea-7pN" id="NJ3-3t-hsK"/>
+                                    <outlet property="delegate" destination="mKm-Ea-7pN" id="Ds7-R9-fsm"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -469,14 +505,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBQ-4q-Ce8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="695.6521739130435" y="993.75"/>
+            <point key="canvasLocation" x="699" y="1049"/>
         </scene>
-        <!--View Controller-->
+        <!--Run View Controller Last Record-->
         <scene sceneID="QTF-84-Yo3">
             <objects>
-                <viewController id="Njg-5Y-PC1" sceneMemberID="viewController">
+                <viewController id="Njg-5Y-PC1" customClass="RunViewController_LastRecord" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h3F-P0-rHu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="410"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="410.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지난 기록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN0-uF-XdE">
@@ -485,29 +521,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jdx-y9-DCb">
-                                <rect key="frame" x="0.0" y="29" width="414" height="350"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jdx-y9-DCb">
+                                <rect key="frame" x="0.0" y="29" width="414" height="350.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="22n-dE-TKa">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="22n-dE-TKa">
                                     <size key="itemSize" width="355" height="106"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="913-FL-l8w">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RunViewController_LastRecord_CollectionView_Cell" id="913-FL-l8w" customClass="RunViewController_LastRecord_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
                                         <rect key="frame" x="29.5" y="0.0" width="355" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C7X-x8-CAE">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Qh-GR-87V">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="106"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="3Qh-GR-87V" secondAttribute="trailing" id="2dQ-dQ-4bp"/>
+                                                <constraint firstItem="3Qh-GR-87V" firstAttribute="top" secondItem="C7X-x8-CAE" secondAttribute="top" id="HKp-bA-IWV"/>
+                                                <constraint firstAttribute="bottom" secondItem="3Qh-GR-87V" secondAttribute="bottom" id="MrR-bS-o1J"/>
+                                                <constraint firstItem="3Qh-GR-87V" firstAttribute="leading" secondItem="C7X-x8-CAE" secondAttribute="leading" id="TTJ-wy-nun"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="355" height="106"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="3Qh-GR-87V" id="BAs-sd-5a6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Njg-5Y-PC1" id="sMT-xj-T9F"/>
+                                    <outlet property="delegate" destination="Njg-5Y-PC1" id="Fqj-vj-BnX"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSS-n0-YSo">
-                                <rect key="frame" x="15" y="379" width="384" height="31"/>
+                                <rect key="frame" x="15" y="379.5" width="384" height="31"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                 <state key="normal" title="Button"/>
