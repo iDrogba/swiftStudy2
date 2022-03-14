@@ -36,7 +36,7 @@ class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_NowPopular_CollectionView_Cell", for: indexPath) as? RunViewController_NowPopular_CollectionView_Cell else {
             return UICollectionViewCell()
         }
-        cell.imageView.image = UIImage(named: "2.jpg")
+        cell.setUI()
         
         return cell
     }
@@ -58,6 +58,10 @@ class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource
 class RunViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
+    func setUI() {
+        imageView.layer.cornerRadius = 3
+        imageView.image = UIImage(named: "2.jpg")
+    }
 }
 
 
@@ -72,7 +76,7 @@ class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_NewMission_CollectionView_Cell", for: indexPath) as? RunViewController_NewMission_CollectionView_Cell else {
             return UICollectionViewCell()
         }
-        cell.imageView.image = UIImage(named: "1.jpg")
+        cell.setUI()
         
         return cell
     }
@@ -103,6 +107,11 @@ class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,
 class RunViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
     @IBOutlet weak var imageView: UIImageView!
     
+    func setUI() {
+        imageView.layer.cornerRadius = 3
+        imageView.image = UIImage(named: "1.jpg")
+        
+    }
 }
 
 
@@ -116,7 +125,7 @@ class RunViewController_LastRecord: UIViewController,UICollectionViewDataSource,
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_LastRecord_CollectionView_Cell", for: indexPath) as? RunViewController_LastRecord_CollectionView_Cell else {
             return UICollectionViewCell()
         }
-        cell.imageView.image = UIImage(named: "2.jpg")
+        cell.setUI()
         
         return cell
     }
@@ -134,4 +143,8 @@ class RunViewController_LastRecord: UIViewController,UICollectionViewDataSource,
 class RunViewController_LastRecord_CollectionView_Cell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
+    func setUI() {
+        imageView.layer.cornerRadius = 3
+        imageView.image = UIImage(named: "2.jpg")
+    }
 }
