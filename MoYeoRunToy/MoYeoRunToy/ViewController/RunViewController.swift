@@ -10,12 +10,48 @@ import UIKit
 
 class RunViewController: UIViewController{
     
-    @IBOutlet weak var profielImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.profielImageView.layer.cornerRadius = self.profielImageView.bounds.height / 2
-        self.profielImageView.layer.masksToBounds = true
-        self.profielImageView.layer.borderWidth = 0
     }
+    
+}
+
+extension RunViewController: UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
+}
+
+extension RunViewController: UICollectionViewDelegateFlowLayout{
+    // CollectionViewHeader 세팅
+    // UIView넣어주기 RunViewController_NowRunning
+    // RunViewController_NewMission
+    // RunViewController_Record
+    
+}
+
+class RunCollectionViewHeaderView: UICollectionReusableView{
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setUI()
+    }
+    
+    func setUI(){
+        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
+        self.profileImageView.layer.masksToBounds = true
+        self.profileImageView.layer.borderWidth = 0
+    }
+}
+class RunCollectionViewCell: UICollectionViewCell {
+    
 }
