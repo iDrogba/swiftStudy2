@@ -415,6 +415,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qon-wd-3Sp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BJl-UH-5Qq" firstAttribute="top" secondItem="GBf-fK-xDL" secondAttribute="top" id="Gac-j5-jP9"/>
@@ -458,7 +459,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W74-5x-ZmY">
-                                <rect key="frame" x="15" y="59" width="384" height="438"/>
+                                <rect key="frame" x="15" y="54" width="384" height="448"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZvF-Mx-BzF">
                                     <size key="itemSize" width="178" height="192"/>
@@ -497,11 +498,12 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ff5-e3-u1C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="W74-5x-ZmY" firstAttribute="bottom" secondItem="bvN-Wc-ZJ2" secondAttribute="top" constant="-10" id="1SO-YF-P0E"/>
+                            <constraint firstItem="W74-5x-ZmY" firstAttribute="bottom" secondItem="bvN-Wc-ZJ2" secondAttribute="top" constant="-5" id="1SO-YF-P0E"/>
                             <constraint firstItem="eOq-qQ-elo" firstAttribute="leading" secondItem="LHO-Pr-uwk" secondAttribute="leading" constant="15" id="4G7-jw-4IT"/>
-                            <constraint firstItem="W74-5x-ZmY" firstAttribute="top" secondItem="eOq-qQ-elo" secondAttribute="bottom" constant="10" id="8fs-5e-vXw"/>
+                            <constraint firstItem="W74-5x-ZmY" firstAttribute="top" secondItem="eOq-qQ-elo" secondAttribute="bottom" constant="5" id="8fs-5e-vXw"/>
                             <constraint firstItem="bvN-Wc-ZJ2" firstAttribute="leading" secondItem="LHO-Pr-uwk" secondAttribute="leading" constant="15" id="Ah6-d2-tOa"/>
                             <constraint firstItem="eOq-qQ-elo" firstAttribute="top" secondItem="LHO-Pr-uwk" secondAttribute="top" constant="20" id="VUr-K5-Hz7"/>
                             <constraint firstAttribute="bottom" secondItem="bvN-Wc-ZJ2" secondAttribute="bottom" id="XuT-Ox-hb6"/>
@@ -530,7 +532,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jdx-y9-DCb">
-                                <rect key="frame" x="15" y="59" width="384" height="300.5"/>
+                                <rect key="frame" x="15" y="54" width="384" height="310.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="22n-dE-TKa">
                                     <size key="itemSize" width="355" height="106"/>
@@ -581,16 +583,17 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="yez-75-dbP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="kSS-n0-YSo" secondAttribute="bottom" id="AOU-6V-QrI"/>
                             <constraint firstItem="hN0-uF-XdE" firstAttribute="leading" secondItem="h3F-P0-rHu" secondAttribute="leading" constant="15" id="Glh-YF-47W"/>
                             <constraint firstItem="Jdx-y9-DCb" firstAttribute="leading" secondItem="h3F-P0-rHu" secondAttribute="leading" constant="15" id="Kib-bb-Xl5"/>
                             <constraint firstItem="kSS-n0-YSo" firstAttribute="leading" secondItem="h3F-P0-rHu" secondAttribute="leading" constant="15" id="OKx-Wd-Txx"/>
-                            <constraint firstItem="kSS-n0-YSo" firstAttribute="top" secondItem="Jdx-y9-DCb" secondAttribute="bottom" constant="10" id="XaC-GY-WW1"/>
+                            <constraint firstItem="kSS-n0-YSo" firstAttribute="top" secondItem="Jdx-y9-DCb" secondAttribute="bottom" constant="5" id="XaC-GY-WW1"/>
                             <constraint firstAttribute="trailing" secondItem="Jdx-y9-DCb" secondAttribute="trailing" constant="15" id="aiC-31-ZJa"/>
                             <constraint firstAttribute="trailing" secondItem="kSS-n0-YSo" secondAttribute="trailing" constant="15" id="dcZ-v9-hhg"/>
-                            <constraint firstItem="Jdx-y9-DCb" firstAttribute="top" secondItem="hN0-uF-XdE" secondAttribute="bottom" constant="10" id="hrI-FA-H48"/>
+                            <constraint firstItem="Jdx-y9-DCb" firstAttribute="top" secondItem="hN0-uF-XdE" secondAttribute="bottom" constant="5" id="hrI-FA-H48"/>
                             <constraint firstItem="hN0-uF-XdE" firstAttribute="top" secondItem="h3F-P0-rHu" secondAttribute="top" constant="20" id="siU-sX-OpW"/>
                         </constraints>
                     </view>
