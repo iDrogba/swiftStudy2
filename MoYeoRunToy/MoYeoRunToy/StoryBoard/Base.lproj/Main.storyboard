@@ -31,7 +31,7 @@
         <!--홈-->
         <scene sceneID="2Gb-hI-vJe">
             <objects>
-                <viewController id="UES-ZJ-kHg" customClass="RunViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UES-ZJ-kHg" customClass="HomeViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mGA-YJ-c4a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                                     <constraint firstAttribute="width" secondItem="vod-4T-VLZ" secondAttribute="height" id="qvJ-gu-45i"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-Cv-afL">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 142.png" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-Cv-afL">
                                                 <rect key="frame" x="366" y="0.0" width="33" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ggx-Cv-afL" secondAttribute="height" id="IRN-gm-Yc3"/>
@@ -154,7 +154,7 @@
                         <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="profileImageView" destination="ggx-Cv-afL" id="zkn-Fm-kYo"/>
+                        <outlet property="profileImageView" destination="ggx-Cv-afL" id="fe0-cf-FBb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCg-wo-xnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -367,10 +367,10 @@
             </objects>
             <point key="canvasLocation" x="825" y="-463"/>
         </scene>
-        <!--Run View Controller Now Popular-->
+        <!--Home View Controller Now Popular-->
         <scene sceneID="i2C-97-ltG">
             <objects>
-                <viewController id="ZGa-uZ-PRX" customClass="RunViewController_NowPopular" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZGa-uZ-PRX" customClass="HomeViewController_NowPopular" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBf-fK-xDL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,27 +385,27 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RunViewController_NowPopular_CollectionView_Cell" id="1fs-1C-X6P" customClass="RunViewController_NowPopular_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeViewController_NowPopular_CollectionView_Cell" id="1fs-1C-X6P" customClass="HomeViewController_NowPopular_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="39" width="361" height="153"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kkF-WQ-Q2Y">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="153"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z8a-S2-4Ug">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-ee-bCX">
                                                     <rect key="frame" x="0.0" y="0.0" width="361" height="153"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Z8a-S2-4Ug" secondAttribute="bottom" id="1uB-iU-T92"/>
-                                                <constraint firstItem="Z8a-S2-4Ug" firstAttribute="leading" secondItem="kkF-WQ-Q2Y" secondAttribute="leading" id="64G-lP-6eN"/>
-                                                <constraint firstAttribute="trailing" secondItem="Z8a-S2-4Ug" secondAttribute="trailing" id="WQV-at-quj"/>
-                                                <constraint firstItem="Z8a-S2-4Ug" firstAttribute="top" secondItem="kkF-WQ-Q2Y" secondAttribute="top" id="cgF-pO-mk2"/>
+                                                <constraint firstAttribute="bottom" secondItem="QXX-ee-bCX" secondAttribute="bottom" id="6jr-JM-G4N"/>
+                                                <constraint firstItem="QXX-ee-bCX" firstAttribute="leading" secondItem="kkF-WQ-Q2Y" secondAttribute="leading" id="8aq-tB-ekm"/>
+                                                <constraint firstAttribute="trailing" secondItem="QXX-ee-bCX" secondAttribute="trailing" id="ReC-4T-gqG"/>
+                                                <constraint firstItem="QXX-ee-bCX" firstAttribute="top" secondItem="kkF-WQ-Q2Y" secondAttribute="top" id="oNd-NE-rvf"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="361" height="153"/>
                                         <connections>
-                                            <outlet property="ImageView" destination="Z8a-S2-4Ug" id="bLr-rI-kEJ"/>
+                                            <outlet property="imageView" destination="QXX-ee-bCX" id="4Qh-Vn-IHP"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -429,10 +429,10 @@
             </objects>
             <point key="canvasLocation" x="-1167" y="926"/>
         </scene>
-        <!--Run View Controller New Mission-->
+        <!--Home View Controller New Mission-->
         <scene sceneID="4ej-P3-lVE">
             <objects>
-                <viewController id="mKm-Ea-7pN" customClass="RunViewController_NewMission" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mKm-Ea-7pN" customClass="HomeViewController_NewMission" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LHO-Pr-uwk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,7 +468,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RunViewController_NewMission_CollectionView_Cell" id="cEt-2m-5f0" customClass="RunViewController_NewMission_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeViewController_NewMission_CollectionView_Cell" id="cEt-2m-5f0" customClass="HomeViewController_NewMission_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dwb-Kq-pWD">
@@ -488,7 +488,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="178" height="192"/>
                                         <connections>
-                                            <outlet property="imageView" destination="E59-fk-RSt" id="gIK-Lj-AbL"/>
+                                            <outlet property="imageView" destination="E59-fk-RSt" id="RQW-gr-CHe"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -517,10 +517,10 @@
             </objects>
             <point key="canvasLocation" x="-517" y="1029"/>
         </scene>
-        <!--Run View Controller Last Record-->
+        <!--Home View Controller Last Record-->
         <scene sceneID="QTF-84-Yo3">
             <objects>
-                <viewController id="Njg-5Y-PC1" customClass="RunViewController_LastRecord" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Njg-5Y-PC1" customClass="HomeViewController_LastRecord" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h3F-P0-rHu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="400.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -541,7 +541,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RunViewController_LastRecord_CollectionView_Cell" id="913-FL-l8w" customClass="RunViewController_LastRecord_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeViewController_LastRecord_CollectionView_Cell" id="913-FL-l8w" customClass="HomeViewController_LastRecord_CollectionView_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
                                         <rect key="frame" x="14.5" y="0.0" width="355" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C7X-x8-CAE">
@@ -561,7 +561,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="355" height="106"/>
                                         <connections>
-                                            <outlet property="imageView" destination="3Qh-GR-87V" id="BAs-sd-5a6"/>
+                                            <outlet property="imageView" destination="3Qh-GR-87V" id="hdN-Yd-BUi"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -604,8 +604,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.jpg" width="3840" height="2160"/>
         <image name="Group 273.png" width="25.25" height="30.75"/>
+        <image name="Rectangle 142.png" width="123" height="123"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="house" catalog="system" width="128" height="106"/>

@@ -1,5 +1,5 @@
 //
-//  RunViewController.swift
+//  HomeViewController.swift
 //  MoYeoRunToy
 //
 //  Created by 김상현 on 2022/03/14.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class RunViewController: UIViewController{
+class HomeViewController: UIViewController{
     
     @IBOutlet weak var profileImageView: UIImageView!
     
@@ -25,7 +25,7 @@ class RunViewController: UIViewController{
     
 }
 
-class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class HomeViewController_NowPopular: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -33,7 +33,7 @@ class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_NowPopular_CollectionView_Cell", for: indexPath) as? RunViewController_NowPopular_CollectionView_Cell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeViewController_NowPopular_CollectionView_Cell", for: indexPath) as? HomeViewController_NowPopular_CollectionView_Cell else {
             return UICollectionViewCell()
         }
         cell.setUI()
@@ -55,7 +55,8 @@ class RunViewController_NowPopular: UIViewController, UICollectionViewDataSource
     }
     
 }
-class RunViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
+class HomeViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
+    
     @IBOutlet weak var imageView: UIImageView!
     
     func setUI() {
@@ -65,7 +66,7 @@ class RunViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
 }
 
 
-class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class HomeViewController_NewMission: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
         
     //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -73,7 +74,7 @@ class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_NewMission_CollectionView_Cell", for: indexPath) as? RunViewController_NewMission_CollectionView_Cell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeViewController_NewMission_CollectionView_Cell", for: indexPath) as? HomeViewController_NewMission_CollectionView_Cell else {
             return UICollectionViewCell()
         }
         cell.setUI()
@@ -104,7 +105,7 @@ class RunViewController_NewMission: UIViewController,UICollectionViewDataSource,
     }
     
 }
-class RunViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
+class HomeViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
     @IBOutlet weak var imageView: UIImageView!
     
     func setUI() {
@@ -115,14 +116,14 @@ class RunViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
 }
 
 
-class RunViewController_LastRecord: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class HomeViewController_LastRecord: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_LastRecord_CollectionView_Cell", for: indexPath) as? RunViewController_LastRecord_CollectionView_Cell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeViewController_LastRecord_CollectionView_Cell", for: indexPath) as? HomeViewController_LastRecord_CollectionView_Cell else {
             return UICollectionViewCell()
         }
         cell.setUI()
@@ -140,7 +141,7 @@ class RunViewController_LastRecord: UIViewController,UICollectionViewDataSource,
     }
     
 }
-class RunViewController_LastRecord_CollectionView_Cell: UICollectionViewCell {
+class HomeViewController_LastRecord_CollectionView_Cell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     func setUI() {
