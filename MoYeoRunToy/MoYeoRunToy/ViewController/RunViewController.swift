@@ -60,7 +60,7 @@ class RunViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
     
     func setUI() {
         imageView.layer.cornerRadius = 3
-        imageView.image = UIImage(named: "2.jpg")
+        imageView.image = UIImage(named: "img1.jpeg")
     }
 }
 
@@ -109,7 +109,7 @@ class RunViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
     
     func setUI() {
         imageView.layer.cornerRadius = 3
-        imageView.image = UIImage(named: "1.jpg")
+        imageView.image = UIImage(named: "img1.jpeg")
         
     }
 }
@@ -145,6 +145,6 @@ class RunViewController_LastRecord_CollectionView_Cell: UICollectionViewCell {
     
     func setUI() {
         imageView.layer.cornerRadius = 3
-        imageView.image = UIImage(named: "2.jpg")
+        imageView.image = UIImage(named: "img1.jpeg")
     }
 }

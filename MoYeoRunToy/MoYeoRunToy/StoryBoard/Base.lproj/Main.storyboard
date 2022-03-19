@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="179.71014492753625" y="401.78571428571428"/>
         </scene>
-        <!--러닝-->
+        <!--홈-->
         <scene sceneID="2Gb-hI-vJe">
             <objects>
                 <viewController id="UES-ZJ-kHg" customClass="RunViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,8 +150,8 @@
                             <constraint firstItem="xbJ-nL-n7g" firstAttribute="bottom" secondItem="ZIb-rv-saX" secondAttribute="bottom" id="jll-yd-wJ6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="러닝" id="ABW-Jf-edJ">
-                        <imageReference key="image" image="lungs" catalog="system" symbolScale="medium"/>
+                    <tabBarItem key="tabBarItem" title="홈" id="ABW-Jf-edJ">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="profileImageView" destination="ggx-Cv-afL" id="zkn-Fm-kYo"/>
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCg-wo-xnf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.63768115942037" y="401.78571428571428"/>
+            <point key="canvasLocation" x="-486" y="408"/>
         </scene>
         <!--미션-->
         <scene sceneID="0q1-lg-00I">
@@ -197,7 +197,7 @@
             </objects>
             <point key="canvasLocation" x="2107" y="402"/>
         </scene>
-        <!--홈-->
+        <!--모여런-->
         <scene sceneID="TiE-qD-8Xa">
             <objects>
                 <viewController id="cxJ-iu-Cjb" customClass="MainViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +214,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="24u-cd-Q5p">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="24u-cd-Q5p">
                                 <rect key="frame" x="20.5" y="219" width="373" height="224"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHT-fg-4DC">
@@ -255,7 +255,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="358" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68c-eJ-JLl">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="68c-eJ-JLl">
                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="209"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5분 달리기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eux-im-Pb2">
@@ -337,13 +337,13 @@
                             <constraint firstItem="0WN-Rp-fv1" firstAttribute="leading" secondItem="zGm-c4-SdZ" secondAttribute="leading" constant="20" id="uA4-n9-4yE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" id="TQQ-Y5-e1G">
-                        <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
+                    <tabBarItem key="tabBarItem" title="모여런" id="TQQ-Y5-e1G">
+                        <imageReference key="image" image="lungs" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAW-JZ-CiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-478.26086956521743" y="401.78571428571428"/>
+            <point key="canvasLocation" x="823" y="402"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="O34-vL-KBt">
@@ -356,11 +356,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="cxJ-iu-Cjb" kind="relationship" relationship="viewControllers" id="weq-iY-62f"/>
-                        <segue destination="b00-cc-QpD" kind="relationship" relationship="viewControllers" id="Atx-RC-Lqu"/>
-                        <segue destination="UES-ZJ-kHg" kind="relationship" relationship="viewControllers" id="rC1-PH-Lob"/>
-                        <segue destination="imH-8k-tfB" kind="relationship" relationship="viewControllers" id="SC0-tB-i0V"/>
-                        <segue destination="mzE-a6-VEL" kind="relationship" relationship="viewControllers" id="Tbj-ak-6TY"/>
+                        <segue destination="UES-ZJ-kHg" kind="relationship" relationship="viewControllers" id="fO0-Oc-yYQ"/>
+                        <segue destination="b00-cc-QpD" kind="relationship" relationship="viewControllers" id="bXr-ci-62h"/>
+                        <segue destination="cxJ-iu-Cjb" kind="relationship" relationship="viewControllers" id="SCe-8d-cvL"/>
+                        <segue destination="imH-8k-tfB" kind="relationship" relationship="viewControllers" id="YxE-dw-wBd"/>
+                        <segue destination="mzE-a6-VEL" kind="relationship" relationship="viewControllers" id="Il3-hm-5Eh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKH-4h-Yjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -427,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NO7-Hx-aKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71.014492753623188" y="903.68303571428567"/>
+            <point key="canvasLocation" x="-1167" y="926"/>
         </scene>
         <!--Run View Controller New Mission-->
         <scene sceneID="4ej-P3-lVE">
@@ -515,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBQ-4q-Ce8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.55072463768124" y="1048.6607142857142"/>
+            <point key="canvasLocation" x="-517" y="1029"/>
         </scene>
         <!--Run View Controller Last Record-->
         <scene sceneID="QTF-84-Yo3">
@@ -600,16 +600,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVT-zP-spA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324.6376811594205" y="963.95089285714278"/>
+            <point key="canvasLocation" x="133" y="983"/>
         </scene>
     </scenes>
     <resources>
         <image name="1.jpg" width="3840" height="2160"/>
-        <image name="2.jpg" width="7360" height="4140"/>
         <image name="Group 273.png" width="25.25" height="30.75"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="img1.jpeg" width="4032" height="3024"/>
         <image name="lungs" catalog="system" width="128" height="91"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">

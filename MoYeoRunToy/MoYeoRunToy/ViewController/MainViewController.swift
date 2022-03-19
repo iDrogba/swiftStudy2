@@ -34,7 +34,7 @@ extension MainViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        cell.RunningGuide_Cell_ImageView.image = UIImage(named: "1.jpg")
+        cell.RunningGuide_Cell_ImageView.image = UIImage(named: "img1.jpeg")
         
         return cell
     }
