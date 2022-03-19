@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class RunViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +23,18 @@ class MainViewController: UIViewController {
 }
 
 //셀 어떻게?
-extension MainViewController: UICollectionViewDataSource {
+extension RunViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainViewController_RunningGuide_Cell", for: indexPath) as? MainViewController_RunningGuide_Cell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RunViewController_RunningGuide_Cell", for: indexPath) as? RunViewController_RunningGuide_Cell else {
             return UICollectionViewCell()
         }
         
-        cell.RunningGuide_Cell_ImageView.image = UIImage(named: "img1.jpeg")
+        cell.imageView.image = UIImage(named: "img1.jpeg")
         
         return cell
     }
@@ -42,7 +42,7 @@ extension MainViewController: UICollectionViewDataSource {
 }
 
 //셀 크기
-extension MainViewController: UICollectionViewDelegateFlowLayout {
+extension RunViewController: UICollectionViewDelegateFlowLayout {
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -53,7 +53,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -63,13 +63,13 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
 }
 
 // 셀 터치시
-extension MainViewController : UICollectionViewDelegate {
+extension RunViewController : UICollectionViewDelegate {
     
 }
 
-class MainViewController_RunningGuide_Cell: UICollectionViewCell {
+class RunViewController_RunningGuide_Cell: UICollectionViewCell {
     
-    @IBOutlet weak var RunningGuide_Cell_ImageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
 
     
     

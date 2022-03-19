@@ -200,7 +200,7 @@
         <!--모여런-->
         <scene sceneID="TiE-qD-8Xa">
             <objects>
-                <viewController id="cxJ-iu-Cjb" customClass="MainViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cxJ-iu-Cjb" customClass="RunViewController" customModule="MoYeoRunToy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TfL-8q-Plt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,14 +248,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MainViewController_RunningGuide_Cell" id="PO0-5p-wR1" customClass="MainViewController_RunningGuide_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="RunViewController_RunningGuide_Cell" id="PO0-5p-wR1" customClass="RunViewController_RunningGuide_Cell" customModule="MoYeoRunToy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="30" width="358" height="209"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OmF-5N-nBj">
                                             <rect key="frame" x="0.0" y="0.0" width="358" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="68c-eJ-JLl">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="68c-eJ-JLl" userLabel="imageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="209"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5분 달리기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eux-im-Pb2">
@@ -283,7 +283,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="RunningGuide_Cell_ImageView" destination="68c-eJ-JLl" id="hSm-Ke-XU3"/>
+                                            <outlet property="imageView" destination="68c-eJ-JLl" id="Lnb-V6-NXB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
