@@ -382,17 +382,36 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-ee-bCX">
                                                     <rect key="frame" x="0.0" y="0.0" width="361" height="153"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOT-wb-6Mo">
+                                                    <rect key="frame" x="303.5" y="126" width="39.5" height="19.5"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUd-ti-low">
+                                                    <rect key="frame" x="18" y="116.5" width="59.5" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="QXX-ee-bCX" secondAttribute="bottom" id="6jr-JM-G4N"/>
                                                 <constraint firstItem="QXX-ee-bCX" firstAttribute="leading" secondItem="kkF-WQ-Q2Y" secondAttribute="leading" id="8aq-tB-ekm"/>
+                                                <constraint firstItem="XOT-wb-6Mo" firstAttribute="bottom" secondItem="QXX-ee-bCX" secondAttribute="centerY" multiplier="1.9" id="Atb-ZJ-aEP"/>
                                                 <constraint firstAttribute="trailing" secondItem="QXX-ee-bCX" secondAttribute="trailing" id="ReC-4T-gqG"/>
                                                 <constraint firstItem="QXX-ee-bCX" firstAttribute="top" secondItem="kkF-WQ-Q2Y" secondAttribute="top" id="oNd-NE-rvf"/>
+                                                <constraint firstItem="XOT-wb-6Mo" firstAttribute="trailing" secondItem="QXX-ee-bCX" secondAttribute="centerX" multiplier="1.9" id="odf-wz-5fO"/>
+                                                <constraint firstItem="qUd-ti-low" firstAttribute="bottom" secondItem="QXX-ee-bCX" secondAttribute="centerY" multiplier="1.9" id="sQL-kI-7rm"/>
+                                                <constraint firstItem="qUd-ti-low" firstAttribute="leading" secondItem="QXX-ee-bCX" secondAttribute="centerX" multiplier="0.1" id="vgM-AR-cRs"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="361" height="153"/>
                                         <connections>
                                             <outlet property="imageView" destination="QXX-ee-bCX" id="4Qh-Vn-IHP"/>
+                                            <outlet property="numberOfPartyLabel" destination="XOT-wb-6Mo" id="sLU-Bk-Re2"/>
+                                            <outlet property="titleLabel" destination="qUd-ti-low" id="yGW-ho-UGp"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
