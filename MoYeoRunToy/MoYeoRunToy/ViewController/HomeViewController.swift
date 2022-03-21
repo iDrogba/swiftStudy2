@@ -11,7 +11,7 @@ import UIKit
 // 고정 높이 320
 class HomeViewController: UIViewController{
     
-    let fixedHeight: CGFloat = 320
+    let fixedHeight: CGFloat = 335
     let screenHeight: CGFloat = UIScreen.main.bounds.height
     var screenHeightForSetting: CGFloat = 0 // 적당한 이름이 생각이 안남..ㅠ
     var multiplier: CGFloat = 0
@@ -42,8 +42,8 @@ class HomeViewController: UIViewController{
         screenHeightForSetting = screenHeight * multiplier
         
         scrollViewHeightConstraint.constant = screenHeightForSetting + fixedHeight
-        nowPopularCollectionView_HeightConstraint.constant = screenHeightForSetting * 0.26
-        newMissionCollectionView_HeightConstraint.constant = screenHeightForSetting * 0.5 + 100
+        nowPopularCollectionView_HeightConstraint.constant = screenHeightForSetting * 0.25
+        newMissionCollectionView_HeightConstraint.constant = screenHeightForSetting * 0.5 + 110
         print(multiplier)
     }
 }

@@ -46,7 +46,7 @@ class HomeViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
     
     
     func setUI() {
-        imageView.layer.cornerRadius = 3
+        imageView.layer.cornerRadius = 5
         imageView.image = UIImage(named: "img1.jpeg")
         titleLabel.text = "바람 부는 날\n5km 함께 뛰어요"
         setNumberOfPartyLabel()

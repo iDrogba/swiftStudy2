@@ -52,7 +52,7 @@ class HomeViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
     @IBOutlet weak var subTitleLabel: UILabel!
     
     func setUI() {
-        imageView.layer.cornerRadius = 3
+        imageView.layer.cornerRadius = 5
         imageView.image = UIImage(named: "img1.jpeg")
         
     }
