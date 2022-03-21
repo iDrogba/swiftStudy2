@@ -35,6 +35,9 @@ class HomeViewController_LastRecord: UIViewController,UICollectionViewDataSource
 }
 class HomeViewController_LastRecord_CollectionView_Cell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var rankingTitleLabel: UILabel!
+    @IBOutlet weak var rankingRankLabel: UILabel!
     
     func setUI() {
         imageView.layer.cornerRadius = 3

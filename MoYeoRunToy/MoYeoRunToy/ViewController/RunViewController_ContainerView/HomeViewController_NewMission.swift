@@ -48,6 +48,8 @@ class HomeViewController_NewMission: UIViewController,UICollectionViewDataSource
 }
 class HomeViewController_NewMission_CollectionView_Cell: UICollectionViewCell{
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var mainTitleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
     
     func setUI() {
         imageView.layer.cornerRadius = 3
