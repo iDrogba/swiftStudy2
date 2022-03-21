@@ -484,10 +484,26 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E59-fk-RSt">
                                                     <rect key="frame" x="0.0" y="0.0" width="178" height="192"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-NG-VrS">
+                                                    <rect key="frame" x="26" y="127" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyN-Yy-UUO">
+                                                    <rect key="frame" x="9" y="161.5" width="160" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="TyN-Yy-UUO" firstAttribute="width" secondItem="E59-fk-RSt" secondAttribute="width" multiplier="0.9" id="7WM-Ja-v6R"/>
                                                 <constraint firstItem="E59-fk-RSt" firstAttribute="leading" secondItem="Dwb-Kq-pWD" secondAttribute="leading" id="9AG-30-IiT"/>
+                                                <constraint firstItem="TyN-Yy-UUO" firstAttribute="bottom" secondItem="E59-fk-RSt" secondAttribute="centerY" multiplier="1.9" id="Gj6-mN-77h"/>
                                                 <constraint firstAttribute="bottom" secondItem="E59-fk-RSt" secondAttribute="bottom" id="HKW-f2-Q2Q"/>
+                                                <constraint firstItem="TyN-Yy-UUO" firstAttribute="centerX" secondItem="E59-fk-RSt" secondAttribute="centerX" id="Heh-hr-6N2"/>
                                                 <constraint firstItem="E59-fk-RSt" firstAttribute="top" secondItem="Dwb-Kq-pWD" secondAttribute="top" id="KU8-kC-oT0"/>
                                                 <constraint firstAttribute="trailing" secondItem="E59-fk-RSt" secondAttribute="trailing" id="Xuw-YR-LBo"/>
                                             </constraints>

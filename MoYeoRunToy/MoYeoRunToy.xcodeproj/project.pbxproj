@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0AF6810C27E8B87A00884904 /* 참가자.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF6810B27E8B87A00884904 /* 참가자.png */; };
+		0AF6811027E8B9F100884904 /* HomeViewController_NowPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6810F27E8B9F100884904 /* HomeViewController_NowPopular.swift */; };
+		0AF6811227E8BA0400884904 /* HomeViewController_NewMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6811127E8BA0400884904 /* HomeViewController_NewMission.swift */; };
+		0AF6811427E8BA1A00884904 /* HomeViewController_LastRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6811327E8BA1A00884904 /* HomeViewController_LastRecord.swift */; };
 		3F220E7327DE2C8A000558DB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F220E7227DE2C8A000558DB /* TabBarController.swift */; };
 		3F220E7527DE2D48000558DB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F220E7427DE2D48000558DB /* Extension.swift */; };
 		3F220E7727DE38C1000558DB /* Group 273.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F220E7627DE38C0000558DB /* Group 273.png */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		0AF6810B27E8B87A00884904 /* 참가자.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "참가자.png"; sourceTree = "<group>"; };
+		0AF6810F27E8B9F100884904 /* HomeViewController_NowPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController_NowPopular.swift; sourceTree = "<group>"; };
+		0AF6811127E8BA0400884904 /* HomeViewController_NewMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController_NewMission.swift; sourceTree = "<group>"; };
+		0AF6811327E8BA1A00884904 /* HomeViewController_LastRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController_LastRecord.swift; sourceTree = "<group>"; };
 		3F220E7227DE2C8A000558DB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3F220E7427DE2D48000558DB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3F220E7627DE38C0000558DB /* Group 273.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 273.png"; sourceTree = "<group>"; };
@@ -90,6 +96,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AF6810D27E8B91200884904 /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				0AF6810B27E8B87A00884904 /* 참가자.png */,
+				3F220E7827DE39BF000558DB /* Rectangle 142.png */,
+				3F220E7627DE38C0000558DB /* Group 273.png */,
+				3F8ACF6B27E5DE0000A0E84B /* img1.jpeg */,
+			);
+			path = TestImage;
+			sourceTree = "<group>";
+		};
+		0AF6810E27E8B9C300884904 /* RunViewController_ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				0AF6810F27E8B9F100884904 /* HomeViewController_NowPopular.swift */,
+				0AF6811127E8BA0400884904 /* HomeViewController_NewMission.swift */,
+				0AF6811327E8BA1A00884904 /* HomeViewController_LastRecord.swift */,
+			);
+			path = RunViewController_ContainerView;
+			sourceTree = "<group>";
+		};
 		3F2500C927DB2F0A00A676B9 = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +145,8 @@
 				3F25010727DB2F8400A676B9 /* Extension */,
 				3F25010627DB2F7400A676B9 /* ViewController */,
 				3F25010527DB2F6700A676B9 /* StoryBoard */,
+				0AF6810D27E8B91200884904 /* TestImage */,
 				3F2500DE27DB2F0B00A676B9 /* Assets.xcassets */,
-				3F8ACF6B27E5DE0000A0E84B /* img1.jpeg */,
-				0AF6810B27E8B87A00884904 /* 참가자.png */,
-				3F220E7627DE38C0000558DB /* Group 273.png */,
-				3F220E7827DE39BF000558DB /* Rectangle 142.png */,
 				3F2500E027DB2F0B00A676B9 /* LaunchScreen.storyboard */,
 				3F2500E327DB2F0B00A676B9 /* Info.plist */,
 			);
@@ -157,6 +181,7 @@
 		3F25010627DB2F7400A676B9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0AF6810E27E8B9C300884904 /* RunViewController_ContainerView */,
 				3F2500D927DB2F0A00A676B9 /* RunViewController.swift */,
 				3F74C5FA27DF1BA60009AFA3 /* HomeViewController.swift */,
 			);
@@ -315,7 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF6811427E8BA1A00884904 /* HomeViewController_LastRecord.swift in Sources */,
 				3F220E7527DE2D48000558DB /* Extension.swift in Sources */,
+				0AF6811227E8BA0400884904 /* HomeViewController_NewMission.swift in Sources */,
+				0AF6811027E8B9F100884904 /* HomeViewController_NowPopular.swift in Sources */,
 				3F2500DA27DB2F0A00A676B9 /* RunViewController.swift in Sources */,
 				3F220E7327DE2C8A000558DB /* TabBarController.swift in Sources */,
 				3F2500D627DB2F0A00A676B9 /* AppDelegate.swift in Sources */,
