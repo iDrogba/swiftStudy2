@@ -24,6 +24,20 @@ extension CALayer {
     }
 }
 
+extension UILabel {
+    func setNumberOfPartyLabel(num: String){
+        let attributedString = NSMutableAttributedString(string: "")
+        let imageAttachment = NSTextAttachment()
+        imageAttachment.image = UIImage(named: "참가자.png")
+        imageAttachment.bounds = CGRect(x: 0, y: 0, width: 13, height: 13)
+        
+        attributedString.append(NSAttributedString(attachment: imageAttachment))
+        attributedString.append(NSAttributedString(string: num))
+        
+        self.attributedText = attributedString
+        self.sizeToFit()
+    }
+}
 extension UITabBar {
     // 기본 그림자 스타일을 초기화해야 커스텀 스타일을 적용할 수 있다.
     static func clearShadow() {

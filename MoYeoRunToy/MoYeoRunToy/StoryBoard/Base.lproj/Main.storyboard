@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palvin님,달려볼까요?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WN-Rp-fv1">
-                                <rect key="frame" x="20" y="100" width="150" height="57.5"/>
+                                <rect key="frame" x="20" y="152" width="150" height="57.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="BZc-hd-7hG"/>
                                 </constraints>
@@ -92,10 +92,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="24u-cd-Q5p">
-                                <rect key="frame" x="20.5" y="219" width="373" height="224"/>
+                                <rect key="frame" x="20.5" y="271" width="373" height="224"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdi-Ri-14Z">
-                                <rect key="frame" x="20" y="157.5" width="150" height="61.5"/>
+                                <rect key="frame" x="20" y="209.5" width="150" height="61.5"/>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="모여런">
@@ -157,19 +157,19 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="러닝 가이드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEj-ua-EQw">
-                                <rect key="frame" x="20" y="443" width="109.5" height="81"/>
+                                <rect key="frame" x="20" y="495" width="109.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자유 달리기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI7-lq-GiF">
-                                <rect key="frame" x="41.5" y="386" width="100" height="26.5"/>
+                                <rect key="frame" x="41.5" y="453" width="100" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원하는 만큼 자유롭게 달려보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9y-R8-hxM">
-                                <rect key="frame" x="41.5" y="412.5" width="194" height="18"/>
+                                <rect key="frame" x="41.5" y="479.5" width="194" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -191,7 +191,6 @@
                             <constraint firstItem="24u-cd-Q5p" firstAttribute="centerX" secondItem="zGm-c4-SdZ" secondAttribute="centerX" id="Rbj-Oj-Y1u"/>
                             <constraint firstItem="24u-cd-Q5p" firstAttribute="width" secondItem="TfL-8q-Plt" secondAttribute="width" multiplier="0.9" id="Y2L-WK-eLv"/>
                             <constraint firstItem="V9y-R8-hxM" firstAttribute="leading" secondItem="24u-cd-Q5p" secondAttribute="centerX" multiplier="0.2" id="bGA-hC-lR8"/>
-                            <constraint firstItem="qEj-ua-EQw" firstAttribute="height" secondItem="TfL-8q-Plt" secondAttribute="height" multiplier="0.09" id="eVJ-Va-rVb"/>
                             <constraint firstItem="PEw-gB-63P" firstAttribute="height" secondItem="zGm-c4-SdZ" secondAttribute="height" multiplier="0.35" id="fMy-A5-Rtr"/>
                             <constraint firstItem="zGm-c4-SdZ" firstAttribute="trailing" secondItem="PEw-gB-63P" secondAttribute="trailing" id="hDc-Um-jgP"/>
                             <constraint firstItem="PEw-gB-63P" firstAttribute="top" secondItem="qEj-ua-EQw" secondAttribute="bottom" id="jYJ-I9-MXB"/>

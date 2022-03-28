@@ -49,19 +49,7 @@ class HomeViewController_NowPopular_CollectionView_Cell : UICollectionViewCell {
         imageView.layer.cornerRadius = 5
         imageView.image = UIImage(named: "img1.jpeg")
         titleLabel.text = "바람 부는 날\n5km 함께 뛰어요"
-        setNumberOfPartyLabel()
+        numberOfPartyLabel.setNumberOfPartyLabel(num: "3/5")
     }
-    
-    func setNumberOfPartyLabel(){
-        let attributedString = NSMutableAttributedString(string: "")
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = UIImage(named: "참가자.png")
-        imageAttachment.bounds = CGRect(x: 0, y: 0, width: 13, height: 13)
-        
-        attributedString.append(NSAttributedString(attachment: imageAttachment))
-        attributedString.append(NSAttributedString(string: "3/4"))
-        
-        numberOfPartyLabel.attributedText = attributedString
-        numberOfPartyLabel.sizeToFit()
-    }
+
 }

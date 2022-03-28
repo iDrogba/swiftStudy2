@@ -16,7 +16,7 @@ class HomeViewController: UIViewController{
     var screenHeightForSetting: CGFloat = 0 // 적당한 이름이 생각이 안남..ㅠ
     var multiplier: CGFloat = 0
     
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: UIButton!
     @IBOutlet weak var scrollViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var nowPopularCollectionView_HeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var newMissionCollectionView_HeightConstraint: NSLayoutConstraint!
