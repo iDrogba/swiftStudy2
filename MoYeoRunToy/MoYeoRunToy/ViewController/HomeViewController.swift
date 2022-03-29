@@ -35,6 +35,7 @@ class HomeViewController: UIViewController{
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
         self.profileImageView.layer.masksToBounds = true
         self.profileImageView.layer.borderWidth = 0
+        profileImageView.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
     }
     
     func setHeightConstraint(){
@@ -45,5 +46,11 @@ class HomeViewController: UIViewController{
         nowPopularCollectionView_HeightConstraint.constant = screenHeightForSetting * 0.25
         newMissionCollectionView_HeightConstraint.constant = screenHeightForSetting * 0.5 + 110
         print(multiplier)
+    }
+    @IBAction func onTouchProfileImage(_ sender: Any) {
+        let sb = UIStoryboard(name: "MyPage", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "MyPageViewController")
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
 }
