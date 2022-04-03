@@ -34,27 +34,34 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZDT-HG-T4T">
-                                <rect key="frame" x="171" y="417" width="72" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZDT-HG-T4T" secondAttribute="height" id="KjZ-va-G0Z"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUe-XY-sBt">
-                                <rect key="frame" x="87" y="108" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUe-XY-sBt">
+                                <rect key="frame" x="0.0" y="76" width="414" height="179"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 142.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZDT-HG-T4T">
+                                        <rect key="frame" x="162" y="45" width="90" height="89.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZDT-HG-T4T" secondAttribute="height" id="KjZ-va-G0Z"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerX" secondItem="UUe-XY-sBt" secondAttribute="centerX" id="ZZ0-TQ-myv"/>
+                                    <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerY" secondItem="UUe-XY-sBt" secondAttribute="centerY" id="gOP-go-Lto"/>
+                                    <constraint firstItem="ZDT-HG-T4T" firstAttribute="height" secondItem="UUe-XY-sBt" secondAttribute="height" multiplier="0.5" id="hX2-SF-DQg"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="B4E-MV-lVm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="65a-th-dpU"/>
-                            <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Hpo-Qf-eV7"/>
-                            <constraint firstItem="ZDT-HG-T4T" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.08" id="PE6-Ee-TKx"/>
+                            <constraint firstItem="UUe-XY-sBt" firstAttribute="top" secondItem="B4E-MV-lVm" secondAttribute="bottom" id="CBJ-2H-l4p"/>
+                            <constraint firstItem="UUe-XY-sBt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qk0-62-ksc"/>
                             <constraint firstItem="WBV-Wg-OKP" firstAttribute="centerY" secondItem="B4E-MV-lVm" secondAttribute="centerY" id="Z4k-EF-Nov"/>
                             <constraint firstItem="B4E-MV-lVm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="baN-Pz-LxM"/>
-                            <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="dNX-lj-WgB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UUe-XY-sBt" secondAttribute="trailing" id="gT0-zT-Ygp"/>
+                            <constraint firstItem="UUe-XY-sBt" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.2" id="v86-ml-Or7"/>
                             <constraint firstItem="WBV-Wg-OKP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="zqY-mw-CER"/>
                         </constraints>
                     </view>
@@ -65,6 +72,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle 142.png" width="123" height="123"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
