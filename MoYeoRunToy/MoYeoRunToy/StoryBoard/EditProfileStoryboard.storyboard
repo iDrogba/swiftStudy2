@@ -43,12 +43,27 @@
                                             <constraint firstAttribute="width" secondItem="ZDT-HG-T4T" secondAttribute="height" id="KjZ-va-G0Z"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldi-Fz-F2y">
+                                        <rect key="frame" x="220.5" y="103" width="31.5" height="31.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ldi-Fz-F2y" secondAttribute="height" id="qOr-fk-hQu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera.circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="12"/>
+                                            <color key="baseForegroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="ldi-Fz-F2y" firstAttribute="trailing" secondItem="ZDT-HG-T4T" secondAttribute="trailing" id="4lo-Lx-DLj"/>
                                     <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerX" secondItem="UUe-XY-sBt" secondAttribute="centerX" id="ZZ0-TQ-myv"/>
                                     <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerY" secondItem="UUe-XY-sBt" secondAttribute="centerY" id="gOP-go-Lto"/>
                                     <constraint firstItem="ZDT-HG-T4T" firstAttribute="height" secondItem="UUe-XY-sBt" secondAttribute="height" multiplier="0.5" id="hX2-SF-DQg"/>
+                                    <constraint firstItem="ldi-Fz-F2y" firstAttribute="bottom" secondItem="ZDT-HG-T4T" secondAttribute="bottom" id="lC9-RA-8uQ"/>
+                                    <constraint firstItem="ldi-Fz-F2y" firstAttribute="width" secondItem="ZDT-HG-T4T" secondAttribute="width" multiplier="0.35" id="pT0-Bf-YVs"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nKK-Bk-Vy2">
@@ -218,6 +233,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraSymbolButton" destination="ldi-Fz-F2y" id="5YD-1V-H7a"/>
                         <outlet property="profileImageView" destination="ZDT-HG-T4T" id="zxk-ei-QGu"/>
                     </connections>
                 </viewController>
@@ -229,6 +245,7 @@
     <resources>
         <image name="Rectangle 142.png" width="123" height="123"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

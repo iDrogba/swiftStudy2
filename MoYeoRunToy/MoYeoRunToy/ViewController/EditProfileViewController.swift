@@ -9,6 +9,7 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var cameraSymbolButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,10 +18,18 @@ class EditProfileViewController: UIViewController {
     
     func setUI(){
         setProfileImageView()
+        setCameraSymbolButton()
     }
     
     func setProfileImageView(){
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
         self.profileImageView.layer.masksToBounds = true
+    }
+    
+    func setCameraSymbolButton(){
+        self.cameraSymbolButton.layer.cornerRadius = self.cameraSymbolButton.frame.width / 2
+        self.cameraSymbolButton.layer.masksToBounds = true
+        self.cameraSymbolButton.layer.borderWidth = 0
+        cameraSymbolButton.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
     }
 }
