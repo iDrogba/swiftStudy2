@@ -74,6 +74,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onTouchEditProfile:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hU9-ua-dCv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-cE-vXI">
                                         <rect key="frame" x="0.0" y="100" width="373" height="50"/>

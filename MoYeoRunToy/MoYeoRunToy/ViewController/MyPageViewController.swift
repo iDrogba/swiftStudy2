@@ -25,4 +25,10 @@ class MyPageViewController: UIViewController {
         self.profileImageView.layer.borderWidth = 0
     }
     
+    @IBAction func onTouchEditProfile(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "EditProfileStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "EditProfile")
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
+    }
 }
