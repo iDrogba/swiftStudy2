@@ -47,8 +47,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IjE-Kd-IHd">
-                                <rect key="frame" x="20.5" y="259" width="373" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IjE-Kd-IHd">
+                                <rect key="frame" x="20.5" y="259" width="373" height="327.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pm-1m-A8G">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
@@ -81,7 +81,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-cE-vXI">
-                                        <rect key="frame" x="0.0" y="58" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="138.5" width="373" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="fGh-RP-2k9"/>
                                         </constraints>
@@ -108,7 +108,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zX-5X-iAl">
-                                        <rect key="frame" x="0.0" y="116" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="277.5" width="373" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="lSU-M9-NYE"/>
                                         </constraints>
@@ -146,6 +146,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8YU-Pu-Xy8" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="0qy-dI-Oaq"/>
+                            <constraint firstItem="IjE-Kd-IHd" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.4" id="B5V-6r-Kr5"/>
                             <constraint firstItem="IjE-Kd-IHd" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="HcU-L3-Eis"/>
                             <constraint firstItem="si3-ys-apq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.2" id="K2l-1P-gPL"/>
                             <constraint firstItem="IjE-Kd-IHd" firstAttribute="top" secondItem="8YU-Pu-Xy8" secondAttribute="bottom" constant="20" id="Ql3-Zo-tHH"/>
