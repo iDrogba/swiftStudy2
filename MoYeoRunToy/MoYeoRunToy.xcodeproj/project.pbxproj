@@ -14,6 +14,7 @@
 		0A128BE827ECCB4800DB9514 /* Friend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A128BE727ECCB4800DB9514 /* Friend.storyboard */; };
 		0A34AD9327F3357300474CBE /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34AD9227F3357300474CBE /* MyPageViewController.swift */; };
 		0A4A14D927FB3E7B003161AB /* SignUpBasicInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A14D827FB3E7B003161AB /* SignUpBasicInformation.storyboard */; };
+		0A4A14DB27FB4124003161AB /* SignUpBasicInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A14DA27FB4124003161AB /* SignUpBasicInformationViewController.swift */; };
 		0AB1028A27F7ECB100030C06 /* EditProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1028927F7ECB100030C06 /* EditProfileStoryboard.storyboard */; };
 		0AB1028C27F7ECC900030C06 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1028B27F7ECC900030C06 /* EditProfileViewController.swift */; };
 		0AE4549627EF001C007B05A8 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE4549527EF001C007B05A8 /* MyPage.storyboard */; };
@@ -63,6 +64,7 @@
 		0A128BE727ECCB4800DB9514 /* Friend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friend.storyboard; sourceTree = "<group>"; };
 		0A34AD9227F3357300474CBE /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		0A4A14D827FB3E7B003161AB /* SignUpBasicInformation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpBasicInformation.storyboard; sourceTree = "<group>"; };
+		0A4A14DA27FB4124003161AB /* SignUpBasicInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBasicInformationViewController.swift; sourceTree = "<group>"; };
 		0AB1028927F7ECB100030C06 /* EditProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		0AB1028B27F7ECC900030C06 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		0AE4549527EF001C007B05A8 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				3F74C5FA27DF1BA60009AFA3 /* HomeViewController.swift */,
 				0A34AD9227F3357300474CBE /* MyPageViewController.swift */,
 				0AB1028B27F7ECC900030C06 /* EditProfileViewController.swift */,
+				0A4A14DA27FB4124003161AB /* SignUpBasicInformationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				0AF6811227E8BA0400884904 /* HomeViewController_NewMission.swift in Sources */,
 				0AF6811027E8B9F100884904 /* HomeViewController_NowPopular.swift in Sources */,
 				3F2500DA27DB2F0A00A676B9 /* RunViewController.swift in Sources */,
+				0A4A14DB27FB4124003161AB /* SignUpBasicInformationViewController.swift in Sources */,
 				0A34AD9327F3357300474CBE /* MyPageViewController.swift in Sources */,
 				3F220E7327DE2C8A000558DB /* TabBarController.swift in Sources */,
 				3F2500D627DB2F0A00A676B9 /* AppDelegate.swift in Sources */,
