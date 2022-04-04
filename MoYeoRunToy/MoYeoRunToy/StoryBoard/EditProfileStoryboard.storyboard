@@ -33,20 +33,25 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTouchBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EXw-vx-nPO"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUe-XY-sBt">
                                 <rect key="frame" x="0.0" y="75.5" width="414" height="179"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 142.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZDT-HG-T4T">
-                                        <rect key="frame" x="162" y="45" width="90" height="89.5"/>
+                                        <rect key="frame" x="170.5" y="53" width="73" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ZDT-HG-T4T" secondAttribute="height" id="KjZ-va-G0Z"/>
+                                            <constraint firstAttribute="height" constant="73" id="b0K-PU-Fpq"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldi-Fz-F2y">
-                                        <rect key="frame" x="220.5" y="103" width="31.5" height="31.5"/>
+                                        <rect key="frame" x="220.5" y="103" width="23" height="23"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="hRb-5h-BSp"/>
                                             <constraint firstAttribute="width" secondItem="ldi-Fz-F2y" secondAttribute="height" id="qOr-fk-hQu"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -61,9 +66,7 @@
                                     <constraint firstItem="ldi-Fz-F2y" firstAttribute="trailing" secondItem="ZDT-HG-T4T" secondAttribute="trailing" id="4lo-Lx-DLj"/>
                                     <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerX" secondItem="UUe-XY-sBt" secondAttribute="centerX" id="ZZ0-TQ-myv"/>
                                     <constraint firstItem="ZDT-HG-T4T" firstAttribute="centerY" secondItem="UUe-XY-sBt" secondAttribute="centerY" id="gOP-go-Lto"/>
-                                    <constraint firstItem="ZDT-HG-T4T" firstAttribute="height" secondItem="UUe-XY-sBt" secondAttribute="height" multiplier="0.5" id="hX2-SF-DQg"/>
                                     <constraint firstItem="ldi-Fz-F2y" firstAttribute="bottom" secondItem="ZDT-HG-T4T" secondAttribute="bottom" id="lC9-RA-8uQ"/>
-                                    <constraint firstItem="ldi-Fz-F2y" firstAttribute="width" secondItem="ZDT-HG-T4T" secondAttribute="width" multiplier="0.35" id="pT0-Bf-YVs"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nKK-Bk-Vy2">

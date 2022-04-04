@@ -22,7 +22,7 @@ class EditProfileViewController: UIViewController {
     }
     
     func setProfileImageView(){
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
+        self.profileImageView.layer.cornerRadius = self.profileImageView.bounds.size.width * 0.5
         self.profileImageView.layer.masksToBounds = true
     }
     
@@ -31,5 +31,8 @@ class EditProfileViewController: UIViewController {
         self.cameraSymbolButton.layer.masksToBounds = true
         self.cameraSymbolButton.layer.borderWidth = 0
         cameraSymbolButton.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
+    }
+    @IBAction func onTouchBackButton(_ sender: Any) {
+        self.dismiss(animated: true)
     }
 }

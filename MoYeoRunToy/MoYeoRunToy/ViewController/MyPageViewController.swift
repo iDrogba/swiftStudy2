@@ -20,7 +20,7 @@ class MyPageViewController: UIViewController {
     }
     
     func setProfileImageView(){
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
+        self.profileImageView.layer.cornerRadius = self.profileImageView.bounds.size.height * 0.5
         self.profileImageView.layer.masksToBounds = true
         self.profileImageView.layer.borderWidth = 0
     }
