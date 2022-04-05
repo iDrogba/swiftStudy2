@@ -48,9 +48,14 @@ class HomeViewController: UIViewController{
         print(multiplier)
     }
     @IBAction func onTouchProfileImage(_ sender: Any) {
-        let sb = UIStoryboard(name: "MyPage", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "MyPageViewController")
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+        let storyboard = UIStoryboard(name: "SignUpBasicInformation", bundle: nil)
+        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "SignUpBasicInformation")
+        viewcontroller.modalPresentationStyle = .fullScreen
+        self.present(viewcontroller, animated: true)
+        
+//        let sb = UIStoryboard(name: "MyPage", bundle: nil)
+//        let vc = sb.instantiateViewController(withIdentifier: "MyPageViewController")
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true)
     }
 }

@@ -18,8 +18,7 @@ class RunViewController: UIViewController {
     func setUI() {
        
     }
-
-
+    
 }
 
 //셀 어떻게?
