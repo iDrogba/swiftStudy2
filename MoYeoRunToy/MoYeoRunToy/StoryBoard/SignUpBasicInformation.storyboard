@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAR-CT-lC2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="기본 정보" id="1GC-QQ-XkI"/>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIu-eQ-OPD">
                                 <rect key="frame" x="0.0" y="88" width="414" height="200"/>
                                 <subviews>
@@ -146,6 +136,28 @@
                                     <action selector="onTapNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1tD-7q-LBU"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAR-CT-lC2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="기본 정보" id="1GC-QQ-XkI">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="P9v-Be-sHg">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="4Zl-XE-Mec">
+                                                <rect key="frame" x="20" y="0.0" width="92" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system" imagePlacement="leading" title="">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" weight="light"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -167,6 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="cameraSymbolButton" destination="Vt5-8p-0na" id="Kyz-0o-7YN"/>
+                        <outlet property="navigationBar" destination="IAR-CT-lC2" id="WRD-1V-SBc"/>
                         <outlet property="profileImageView" destination="8L9-Bg-46N" id="EGb-LE-PhS"/>
                     </connections>
                 </viewController>
@@ -177,6 +190,7 @@
     </scenes>
     <resources>
         <image name="Rectangle 142.png" width="123" height="123"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

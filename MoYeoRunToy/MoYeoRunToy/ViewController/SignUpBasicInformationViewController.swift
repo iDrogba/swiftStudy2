@@ -9,6 +9,7 @@ import UIKit
 
 class SignUpBasicInformationViewController: UIViewController {
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var cameraSymbolButton: UIButton!
     
@@ -18,6 +19,7 @@ class SignUpBasicInformationViewController: UIViewController {
     }
     
     func setUI(){
+        //navigationBar.layer.addBorder([.bottom], color: UIColor(red: 212, green: 212, blue: 212, a: 1), width: 0.6)
         setProfileImageView()
         setCameraSymbolButton()
     }

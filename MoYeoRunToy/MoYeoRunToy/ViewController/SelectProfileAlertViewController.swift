@@ -26,8 +26,8 @@ class SelectProfileImageAlertViewController: UIViewController {
         self.stackView.layer.cornerRadius = 12
         self.stackView.layer.masksToBounds = true
         
-        self.selectOnGalleryButton.layer.addBorder([.top], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
-        self.selectOnExistingImage.layer.addBorder([.top], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
+        self.profileImageLabel.layer.addBorder([.bottom], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
+        self.selectOnGalleryButton.layer.addBorder([.bottom], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
     }
     
     func setOnTapAction() {
