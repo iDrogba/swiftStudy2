@@ -9,20 +9,40 @@ import UIKit
 
 class SelectProfileImageAlertViewController: UIViewController {
     
+    @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var profileImageLabel: UILabel!
     @IBOutlet weak var selectOnGalleryButton: UIButton!
     @IBOutlet weak var selectOnExistingImage: UIButton!
     @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
-    }
-    func setUI() {
-        stackView.layer.cornerRadius = 12
-        stackView.layer.masksToBounds = true
         
-        selectOnGalleryButton.layer.addBorder([.top], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
-        selectOnExistingImage.layer.addBorder([.top], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
+        setUI()
+        setOnTapAction()
+    }
+    
+    func setUI() {
+        self.stackView.layer.cornerRadius = 12
+        self.stackView.layer.masksToBounds = true
+        
+        self.selectOnGalleryButton.layer.addBorder([.top], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
+        self.selectOnExistingImage.layer.addBorder([.top], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
+    }
+    
+    func setOnTapAction() {
+        self.profileImageLabel.isUserInteractionEnabled = true
+        self.profileImageLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.profileImageLabelTapped(_:))))
+        
+        self.backgroundView.isUserInteractionEnabled = true
+        self.backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.viewTapped)))
+    }
+    
+    @objc func profileImageLabelTapped(_ sender: UITapGestureRecognizer) {}
+    
+    @objc func viewTapped(_ sender: UITapGestureRecognizer) {
+        print("\(sender.view!.tag) 클릭됨")
+        self.dismiss(animated: false)
     }
 }
 

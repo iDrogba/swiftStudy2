@@ -21,6 +21,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 사진" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpM-2d-f3o">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="66"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="hYk-p2-Z7s"/>
                                         </constraints>
@@ -56,6 +57,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="0.50434602649006621" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VYJ-e3-lJZ" secondAttribute="trailing" constant="40" id="Uhr-P9-9by"/>
                             <constraint firstItem="VYJ-e3-lJZ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="t5a-Fi-UrN"/>
@@ -63,6 +65,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="5EZ-qb-Rvc" id="XKy-Pi-84H"/>
+                        <outlet property="profileImageLabel" destination="TpM-2d-f3o" id="Lci-m8-8Af"/>
                         <outlet property="selectOnExistingImage" destination="FwF-ol-uq3" id="ViM-NL-WhX"/>
                         <outlet property="selectOnGalleryButton" destination="Ro5-DH-0BO" id="4iy-uq-nPI"/>
                         <outlet property="stackView" destination="VYJ-e3-lJZ" id="6ab-6P-Kz8"/>
