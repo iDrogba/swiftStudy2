@@ -55,13 +55,18 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.50434602649006621" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VYJ-e3-lJZ" secondAttribute="trailing" constant="40" id="Uhr-P9-9by"/>
                             <constraint firstItem="VYJ-e3-lJZ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="t5a-Fi-UrN"/>
                             <constraint firstItem="VYJ-e3-lJZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="xRQ-qn-MSI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selectOnExistingImage" destination="FwF-ol-uq3" id="ViM-NL-WhX"/>
+                        <outlet property="selectOnGalleryButton" destination="Ro5-DH-0BO" id="4iy-uq-nPI"/>
+                        <outlet property="stackView" destination="VYJ-e3-lJZ" id="6ab-6P-Kz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

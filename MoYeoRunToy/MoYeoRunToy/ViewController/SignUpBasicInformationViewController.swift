@@ -37,7 +37,7 @@ class SignUpBasicInformationViewController: UIViewController {
     @IBAction func onTapNextButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SelectProfileImageAlertStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "SelectProfileImageAlertViewController")
-        viewController.modalPresentationStyle = .fullScreen
+        viewController.modalPresentationStyle = .overCurrentContext
         self.present(viewController, animated: false)
         
     }
