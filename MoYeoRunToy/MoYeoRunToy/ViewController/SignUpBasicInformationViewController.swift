@@ -33,4 +33,13 @@ class SignUpBasicInformationViewController: UIViewController {
         self.cameraSymbolButton.layer.borderWidth = 0
         cameraSymbolButton.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
     }
+    
+    @IBAction func onTapNextButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SelectProfileImageAlertStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "SelectProfileImageAlertViewController")
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: false)
+        
+    }
+    
 }
