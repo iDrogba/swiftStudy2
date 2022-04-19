@@ -135,9 +135,6 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onTapNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1tD-7q-LBU"/>
-                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAR-CT-lC2">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -156,6 +153,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system" imagePlacement="leading" title="">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" weight="light"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onTapMoveBackwardButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eAP-U2-AcM"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>

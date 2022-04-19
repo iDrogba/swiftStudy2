@@ -42,13 +42,8 @@ class SignUpBasicInformationViewController: UIViewController {
         viewController.modalPresentationStyle = .overCurrentContext
         self.present(viewController, animated: false)
     }
-    
-    @IBAction func onTapNextButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "SelectProfileImageAlertStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "SelectProfileImageAlertViewController")
-        viewController.modalPresentationStyle = .overCurrentContext
-        self.present(viewController, animated: false)
-        
+    @IBAction func onTapMoveBackwardButton(_ sender: Any) {
+        self.dismiss(animated: false)
     }
     
 }
