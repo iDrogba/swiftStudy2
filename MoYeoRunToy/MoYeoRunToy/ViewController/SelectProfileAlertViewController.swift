@@ -25,9 +25,6 @@ class SelectProfileImageAlertViewController: UIViewController {
     func setUI() {
         self.stackView.layer.cornerRadius = 12
         self.stackView.layer.masksToBounds = true
-        
-        self.profileImageLabel.layer.addBorder([.bottom], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
-        self.selectOnGalleryButton.layer.addBorder([.bottom], color: UIColor(red: 235, green: 236, blue: 239, a: 1), width: 1)
     }
     
     func setOnTapAction() {
@@ -69,5 +66,27 @@ extension CALayer {
             border.backgroundColor = color.cgColor;
             self.addSublayer(border)
         }
+    }
+}
+
+extension UIView {
+
+    enum ViewSide {
+        case Left, Right, Top, Bottom
+    }
+
+    func addBorder(toSide side: ViewSide, withColor color: CGColor, andThickness thickness: CGFloat) {
+
+        let border = CALayer()
+        border.backgroundColor = color
+
+        switch side {
+        case .Left: border.frame = CGRect(x: frame.minX, y: frame.minY, width: thickness, height: frame.height); break
+        case .Right: border.frame = CGRect(x: frame.maxX, y: frame.minY, width: thickness, height: frame.height); break
+        case .Top: border.frame = CGRect(x: frame.minX, y: frame.minY, width: frame.width, height: thickness); break
+        case .Bottom: border.frame = CGRect(x: frame.minX, y: frame.maxY, width: frame.width, height: thickness); break
+        }
+
+        layer.addSublayer(border)
     }
 }
