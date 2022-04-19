@@ -36,6 +36,13 @@ class SignUpBasicInformationViewController: UIViewController {
         cameraSymbolButton.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
     }
     
+    @IBAction func onTapCameraSymbolButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SelectProfileImageAlertStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "SelectProfileImageAlertViewController")
+        viewController.modalPresentationStyle = .overCurrentContext
+        self.present(viewController, animated: false)
+    }
+    
     @IBAction func onTapNextButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SelectProfileImageAlertStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "SelectProfileImageAlertViewController")
