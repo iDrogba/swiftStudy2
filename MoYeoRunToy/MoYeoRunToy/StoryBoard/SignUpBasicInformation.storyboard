@@ -150,9 +150,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system" imagePlacement="leading" title="">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" weight="light"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=""/>
                                                 <connections>
                                                     <action selector="onTapMoveBackwardButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eAP-U2-AcM"/>
                                                 </connections>
@@ -193,8 +191,8 @@
     </scenes>
     <resources>
         <image name="Rectangle 142.png" width="123" height="123"/>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
