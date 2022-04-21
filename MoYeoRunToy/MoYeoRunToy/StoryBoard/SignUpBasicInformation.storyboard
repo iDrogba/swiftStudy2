@@ -53,10 +53,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-iv-QAq">
-                                <rect key="frame" x="18" y="288" width="378" height="249"/>
+                                <rect key="frame" x="24" y="288" width="366" height="249"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O64-HN-bj4">
-                                        <rect key="frame" x="0.0" y="0.0" width="378" height="78"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="78"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ab-rp-sYQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="25"/>
@@ -68,7 +68,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-Sw-RJq">
-                                                <rect key="frame" x="0.0" y="30" width="378" height="48"/>
+                                                <rect key="frame" x="0.0" y="30" width="366" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="fJJ-xG-g9f"/>
                                                 </constraints>
@@ -87,7 +87,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjr-1v-u1A">
-                                        <rect key="frame" x="0.0" y="88" width="378" height="78"/>
+                                        <rect key="frame" x="0.0" y="88" width="366" height="78"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eU9-3Q-K14">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="25"/>
@@ -99,7 +99,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4b-fd-4SI">
-                                                <rect key="frame" x="0.0" y="30" width="378" height="48"/>
+                                                <rect key="frame" x="0.0" y="30" width="366" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="5wp-QQ-gQ6"/>
                                                 </constraints>
@@ -118,7 +118,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymt-yW-swY">
-                                        <rect key="frame" x="0.0" y="176" width="378" height="73"/>
+                                        <rect key="frame" x="0.0" y="176" width="366" height="73"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dr-HV-lXW">
                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="25"/>
@@ -130,31 +130,37 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-1v-JQX">
-                                                <rect key="frame" x="0.0" y="25" width="378" height="48"/>
+                                                <rect key="frame" x="0.0" y="25" width="366" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbU-V7-DPX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="178.5" height="48"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="성별남" title=""/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="value" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL6-s0-ySn">
-                                                        <rect key="frame" x="193.5" y="0.0" width="184.5" height="48"/>
+                                                        <rect key="frame" x="187.5" y="0.0" width="178.5" height="48"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="성별여" title=""/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="value" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
@@ -178,14 +184,14 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NES-IC-V6s">
-                                <rect key="frame" x="18" y="604" width="378" height="58"/>
+                                <rect key="frame" x="24" y="782" width="366" height="56"/>
                                 <color key="backgroundColor" red="0.066666666666666666" green="0.38431372549019605" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="rYB-MX-y8h"/>
+                                    <constraint firstAttribute="height" constant="56" id="rYB-MX-y8h"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="다음">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -222,23 +228,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xIu-eQ-OPD" secondAttribute="trailing" id="07d-cP-ceL"/>
-                            <constraint firstItem="CQs-iv-QAq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="1vG-MW-O0g"/>
+                            <constraint firstItem="CQs-iv-QAq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="1vG-MW-O0g"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IAR-CT-lC2" secondAttribute="trailing" id="354-lO-BB7"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CQs-iv-QAq" secondAttribute="trailing" constant="18" id="3cf-Ig-tql"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CQs-iv-QAq" secondAttribute="trailing" constant="24" id="3cf-Ig-tql"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="xIu-eQ-OPD" secondAttribute="leading" id="ADq-BG-hSO"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NES-IC-V6s" secondAttribute="bottom" constant="200" id="Lq9-vx-hhu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NES-IC-V6s" secondAttribute="bottom" constant="24" id="Lq9-vx-hhu"/>
                             <constraint firstItem="IAR-CT-lC2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OKe-SQ-EMc"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NES-IC-V6s" secondAttribute="trailing" constant="18" id="PjW-Fy-pTg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NES-IC-V6s" secondAttribute="trailing" constant="24" id="PjW-Fy-pTg"/>
                             <constraint firstItem="IAR-CT-lC2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UpI-nT-ywj"/>
                             <constraint firstItem="xIu-eQ-OPD" firstAttribute="top" secondItem="IAR-CT-lC2" secondAttribute="bottom" id="XIG-5y-KDx"/>
-                            <constraint firstItem="NES-IC-V6s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="bO8-ju-FM8"/>
+                            <constraint firstItem="NES-IC-V6s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="bO8-ju-FM8"/>
                             <constraint firstItem="CQs-iv-QAq" firstAttribute="top" secondItem="xIu-eQ-OPD" secondAttribute="bottom" id="f6R-Ag-8cn"/>
                             <constraint firstItem="CQs-iv-QAq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="qMD-w7-kB6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cameraSymbolButton" destination="Vt5-8p-0na" id="Kyz-0o-7YN"/>
+                        <outlet property="nameTextField" destination="kT2-Sw-RJq" id="Q0l-y3-gf9"/>
                         <outlet property="navigationBar" destination="IAR-CT-lC2" id="WRD-1V-SBc"/>
+                        <outlet property="nickNameTextField" destination="y4b-fd-4SI" id="TaL-Ef-9XC"/>
                         <outlet property="profileImageView" destination="8L9-Bg-46N" id="EGb-LE-PhS"/>
                     </connections>
                 </viewController>

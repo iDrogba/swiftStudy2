@@ -12,6 +12,9 @@ class SignUpBasicInformationViewController: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var cameraSymbolButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var nickNameTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +22,15 @@ class SignUpBasicInformationViewController: UIViewController {
     }
     
     func setUI(){
+        setBorderColor()
         setProfileImageView()
         setCameraSymbolButton()
+    }
+    
+    func setBorderColor() {
+        let borderColor = CGColor(red: 212, green: 212, blue: 212, alpha: 1)
+        nameTextField.layer.borderColor = borderColor
+        nickNameTextField.layer.borderColor = borderColor
     }
 
     func setProfileImageView(){
