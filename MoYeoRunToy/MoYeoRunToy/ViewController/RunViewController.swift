@@ -16,7 +16,7 @@ class RunViewController: UIViewController {
     }
     
     func setUI() {
-       
+
     }
     
 }

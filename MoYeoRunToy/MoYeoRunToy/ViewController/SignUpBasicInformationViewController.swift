@@ -21,28 +21,34 @@ class SignUpBasicInformationViewController: UIViewController {
         setUI()
     }
     
-    func setUI(){
+    func setUI() {
         setBorderColor()
         setProfileImageView()
         setCameraSymbolButton()
-    }
-    
-    func setBorderColor() {
-        let borderColor = CGColor(red: 212, green: 212, blue: 212, alpha: 1)
-        nameTextField.layer.borderColor = borderColor
-        nickNameTextField.layer.borderColor = borderColor
-    }
 
-    func setProfileImageView(){
-        self.profileImageView.layer.cornerRadius = self.profileImageView.bounds.size.width * 0.5
-        self.profileImageView.layer.masksToBounds = true
-    }
+        func setBorderColor() {
+            let borderColor = UIColor(red: 212, green: 212, blue: 212, alpha: 1)
+            
+            nameTextField.layer.borderColor = borderColor.cgColor
+            nickNameTextField.layer.borderColor = borderColor.cgColor
+            nameTextField.layer.borderWidth = 1
+            nickNameTextField.layer.borderWidth = 1
+            nameTextField.clipsToBounds = true
+            nickNameTextField.clipsToBounds = true
+            nameTextField.layer.masksToBounds = true
+        }
 
-    func setCameraSymbolButton(){
-        self.cameraSymbolButton.layer.cornerRadius = self.cameraSymbolButton.frame.width / 2
-        self.cameraSymbolButton.layer.masksToBounds = true
-        self.cameraSymbolButton.layer.borderWidth = 0
-        cameraSymbolButton.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
+        func setProfileImageView(){
+            self.profileImageView.layer.cornerRadius = self.profileImageView.bounds.size.width * 0.5
+            self.profileImageView.layer.masksToBounds = true
+        }
+
+        func setCameraSymbolButton(){
+            self.cameraSymbolButton.layer.cornerRadius = self.cameraSymbolButton.frame.width / 2
+            self.cameraSymbolButton.layer.masksToBounds = true
+            self.cameraSymbolButton.layer.borderWidth = 0
+            cameraSymbolButton.imageView?.adjustsImageSizeForAccessibilityContentSizeCategory = true
+        }
     }
     
     @IBAction func onTapCameraSymbolButton(_ sender: Any) {
