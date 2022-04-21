@@ -22,21 +22,8 @@ class SignUpBasicInformationViewController: UIViewController {
     }
     
     func setUI() {
-        setBorderColor()
         setProfileImageView()
         setCameraSymbolButton()
-
-        func setBorderColor() {
-            let borderColor = UIColor(red: 212, green: 212, blue: 212, alpha: 1)
-            
-            nameTextField.layer.borderColor = borderColor.cgColor
-            nickNameTextField.layer.borderColor = borderColor.cgColor
-            nameTextField.layer.borderWidth = 1
-            nickNameTextField.layer.borderWidth = 1
-            nameTextField.clipsToBounds = true
-            nickNameTextField.clipsToBounds = true
-            nameTextField.layer.masksToBounds = true
-        }
 
         func setProfileImageView(){
             self.profileImageView.layer.cornerRadius = self.profileImageView.bounds.size.width * 0.5

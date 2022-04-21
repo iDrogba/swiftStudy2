@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0D474F2811C0B1009D4E67 /* 성별남.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D474D2811C0B1009D4E67 /* 성별남.png */; };
+		0A0D47502811C0B1009D4E67 /* 성별여.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D474E2811C0B1009D4E67 /* 성별여.png */; };
 		0A128BDF27ECCB0300DB9514 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A128BDE27ECCB0300DB9514 /* Home.storyboard */; };
 		0A128BE127ECCB1B00DB9514 /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A128BE027ECCB1B00DB9514 /* Record.storyboard */; };
 		0A128BE327ECCB2600DB9514 /* Run.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A128BE227ECCB2600DB9514 /* Run.storyboard */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0D474D2811C0B1009D4E67 /* 성별남.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "성별남.png"; sourceTree = "<group>"; };
+		0A0D474E2811C0B1009D4E67 /* 성별여.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "성별여.png"; sourceTree = "<group>"; };
 		0A128BDE27ECCB0300DB9514 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		0A128BE027ECCB1B00DB9514 /* Record.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Record.storyboard; sourceTree = "<group>"; };
 		0A128BE227ECCB2600DB9514 /* Run.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Run.storyboard; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 		0AF6810D27E8B91200884904 /* TestImage */ = {
 			isa = PBXGroup;
 			children = (
+				0A0D474D2811C0B1009D4E67 /* 성별남.png */,
+				0A0D474E2811C0B1009D4E67 /* 성별여.png */,
 				0AF6810B27E8B87A00884904 /* 참가자.png */,
 				3F220E7827DE39BF000558DB /* Rectangle 142.png */,
 				3F220E7627DE38C0000558DB /* Group 273.png */,
@@ -364,12 +370,14 @@
 				3F2500E227DB2F0B00A676B9 /* LaunchScreen.storyboard in Resources */,
 				0A128BE627ECCB3A00DB9514 /* Mission.storyboard in Resources */,
 				3F8ACF6C27E5DE0000A0E84B /* img1.jpeg in Resources */,
+				0A0D474F2811C0B1009D4E67 /* 성별남.png in Resources */,
 				0A128BE127ECCB1B00DB9514 /* Record.storyboard in Resources */,
 				0A26EDD9280AE7FC0077C042 /* SelectProfileImageAlertStoryboard.storyboard in Resources */,
 				0AF6810C27E8B87A00884904 /* 참가자.png in Resources */,
 				3F220E7727DE38C1000558DB /* Group 273.png in Resources */,
 				0AE4549627EF001C007B05A8 /* MyPage.storyboard in Resources */,
 				3F2500DF27DB2F0B00A676B9 /* Assets.xcassets in Resources */,
+				0A0D47502811C0B1009D4E67 /* 성별여.png in Resources */,
 				3F2500DD27DB2F0A00A676B9 /* Main.storyboard in Resources */,
 				0AB1028A27F7ECB100030C06 /* EditProfileStoryboard.storyboard in Resources */,
 				0A128BDF27ECCB0300DB9514 /* Home.storyboard in Resources */,
