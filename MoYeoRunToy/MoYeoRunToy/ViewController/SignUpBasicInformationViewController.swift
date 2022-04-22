@@ -74,25 +74,41 @@ class SignUpBasicInformationViewController: UIViewController {
     
     func selectGender(){
         switch selectedGender {
-        case 0: setButtonColorWhenNoSelectedGender()
-        case 1: setButtonColorWhenMale()
-        case 2: setButtonColorWhenFemale()
+            
+        case 0: unsetBothButtonColor()
+            
+        case 1: setMaleButtonColor()
+            unsetFemaleButtonColor()
+            
+        case 2: setFemaleButtonColor()
+            unsetMaleButtonColor()
+            
         default: break
         }
         
-        func setButtonColorWhenNoSelectedGender() {
+        func setMaleButtonColor() {
+            genderMaleButton.titleLabel?.textColor = .white
+            genderMaleButton.backgroundColor = UIColor(named: "buttonColor1")
+            genderMaleButton.borderColor = UIColor(named: "buttonColor1")
+        }
+        func setFemaleButtonColor() {
+            genderFemaleButton.titleLabel?.textColor = .white
+            genderFemaleButton.backgroundColor = UIColor(named: "buttonColor1")
+            genderFemaleButton.borderColor = UIColor(named: "buttonColor1")
+        }
+        func unsetBothButtonColor() {
+            unsetMaleButtonColor()
+            unsetFemaleButtonColor()
+        }
+        func unsetMaleButtonColor(){
             genderMaleButton.titleLabel?.textColor = UIColor.systemGray5
             genderMaleButton.backgroundColor = UIColor.white
+            genderMaleButton.borderColor = .systemGray5
+        }
+        func unsetFemaleButtonColor(){
             genderFemaleButton.titleLabel?.textColor = UIColor.systemGray5
             genderFemaleButton.backgroundColor = UIColor.white
-        }
-        func setButtonColorWhenMale() {
-            genderMaleButton.titleLabel?.textColor = UIColor.white
-            genderMaleButton.backgroundColor = UIColor(named: "buttonColor1")
-        }
-        func setButtonColorWhenFemale() {
-            genderFemaleButton.titleLabel?.textColor = UIColor.white
-            genderFemaleButton.backgroundColor = UIColor(named: "buttonColor1")
+            genderFemaleButton.borderColor = .systemGray5
         }
     }
 }
