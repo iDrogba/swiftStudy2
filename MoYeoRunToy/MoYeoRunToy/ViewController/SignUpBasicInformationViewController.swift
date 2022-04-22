@@ -59,7 +59,7 @@ class SignUpBasicInformationViewController: UIViewController {
         case 2: selectedGender = 1
         default: break
         }
-        selectGender()
+        setGenderButtonColor()
     }
     
     @IBAction func onTapGenderFemaleButton(_ sender: Any) {
@@ -69,10 +69,10 @@ class SignUpBasicInformationViewController: UIViewController {
         case 2: selectedGender = 0
         default: break
         }
-        selectGender()
+        setGenderButtonColor()
     }
     
-    func selectGender(){
+    func setGenderButtonColor(){
         switch selectedGender {
             
         case 0: unsetBothButtonColor()
@@ -87,12 +87,12 @@ class SignUpBasicInformationViewController: UIViewController {
         }
         
         func setMaleButtonColor() {
-            genderMaleButton.titleLabel?.textColor = .white
+            genderMaleButton.tintColor = .white
             genderMaleButton.backgroundColor = UIColor(named: "buttonColor1")
             genderMaleButton.borderColor = UIColor(named: "buttonColor1")
         }
         func setFemaleButtonColor() {
-            genderFemaleButton.titleLabel?.textColor = .white
+            genderFemaleButton.tintColor = .white
             genderFemaleButton.backgroundColor = UIColor(named: "buttonColor1")
             genderFemaleButton.borderColor = UIColor(named: "buttonColor1")
         }
@@ -101,13 +101,13 @@ class SignUpBasicInformationViewController: UIViewController {
             unsetFemaleButtonColor()
         }
         func unsetMaleButtonColor(){
-            genderMaleButton.titleLabel?.textColor = UIColor.systemGray5
-            genderMaleButton.backgroundColor = UIColor.white
+            genderMaleButton.tintColor = .black
+            genderMaleButton.backgroundColor = .white
             genderMaleButton.borderColor = .systemGray5
         }
         func unsetFemaleButtonColor(){
-            genderFemaleButton.titleLabel?.textColor = UIColor.systemGray5
-            genderFemaleButton.backgroundColor = UIColor.white
+            genderFemaleButton.tintColor = .black
+            genderFemaleButton.backgroundColor = .white
             genderFemaleButton.borderColor = .systemGray5
         }
     }

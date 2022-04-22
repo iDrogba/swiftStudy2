@@ -135,8 +135,11 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbU-V7-DPX">
                                                         <rect key="frame" x="0.0" y="0.0" width="178.5" height="48"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="성별남" title=""/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="성별남" title="">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="ultraLight"/>
+                                                        </buttonConfiguration>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                 <color key="value" systemColor="systemGray5Color"/>
@@ -154,6 +157,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL6-s0-ySn">
                                                         <rect key="frame" x="187.5" y="0.0" width="178.5" height="48"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="성별여" title=""/>
                                                         <userDefinedRuntimeAttributes>
