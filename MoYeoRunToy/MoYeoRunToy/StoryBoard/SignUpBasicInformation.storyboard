@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -147,6 +148,9 @@
                                                                 <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onTapGenderMaleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lWA-B3-mLU"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL6-s0-ySn">
                                                         <rect key="frame" x="187.5" y="0.0" width="178.5" height="48"/>
@@ -163,6 +167,9 @@
                                                                 <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onTapGenderFemaleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="W4T-mW-alD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -185,7 +192,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NES-IC-V6s">
                                 <rect key="frame" x="24" y="782" width="366" height="56"/>
-                                <color key="backgroundColor" red="0.066666666666666666" green="0.38431372549019605" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="buttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="rYB-MX-y8h"/>
                                 </constraints>
@@ -244,6 +251,8 @@
                     </view>
                     <connections>
                         <outlet property="cameraSymbolButton" destination="Vt5-8p-0na" id="Kyz-0o-7YN"/>
+                        <outlet property="genderFemaleButton" destination="tL6-s0-ySn" id="pvV-6n-VdI"/>
+                        <outlet property="genderMaleButton" destination="GbU-V7-DPX" id="Tpk-rR-Roh"/>
                         <outlet property="nameTextField" destination="kT2-Sw-RJq" id="Q0l-y3-gf9"/>
                         <outlet property="navigationBar" destination="IAR-CT-lC2" id="WRD-1V-SBc"/>
                         <outlet property="nickNameTextField" destination="y4b-fd-4SI" id="TaL-Ef-9XC"/>
@@ -261,6 +270,9 @@
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="성별남" width="20" height="33"/>
         <image name="성별여" width="32" height="31"/>
+        <namedColor name="buttonColor">
+            <color red="0.066666666666666666" green="0.38431372549019605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
