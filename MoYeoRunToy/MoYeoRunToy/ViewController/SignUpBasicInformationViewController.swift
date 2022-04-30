@@ -27,14 +27,22 @@ class SignUpBasicInformationViewController: UIViewController {
     func setUI(){
         setProfileImageView()
         setCameraSymbolButton()
+        setNameTextFieldBorderColor()
+        setNickNameTextFieldBorderColor()
         
-//        setTextFieldBorderColor()
-//
-//        func setTextFieldBorderColor() {
-//            nameTextField.borderStyle = .none
-//            nameTextField.layer.addBorder([.all], color: UIColor(red: 212, green: 212, blue: 212, alpha: 1), width: 1, cornerRadius: 4)
-//
-//        }
+        func setNameTextFieldBorderColor() {
+            nameTextField.borderStyle = .none
+            nameTextField.layer.borderWidth = 1
+            nameTextField.layer.cornerRadius = 4
+            nameTextField.layer.borderColor = UIColor(named: "borderColor1")?.cgColor
+        }
+
+        func setNickNameTextFieldBorderColor() {
+            nickNameTextField.borderStyle = .none
+            nickNameTextField.layer.borderWidth = 1
+            nickNameTextField.layer.cornerRadius = 4
+            nickNameTextField.layer.borderColor = UIColor(named: "borderColor1")?.cgColor
+        }
 
         func setProfileImageView() {
             self.profileImageView.layer.cornerRadius = self.profileImageView.bounds.size.width * 0.5
@@ -111,12 +119,12 @@ class SignUpBasicInformationViewController: UIViewController {
         func unsetMaleButtonColor(){
             genderMaleButton.tintColor = .black
             genderMaleButton.backgroundColor = .white
-            genderMaleButton.borderColor = .systemGray5
+            genderMaleButton.borderColor = UIColor(named: "borderColor1")
         }
         func unsetFemaleButtonColor(){
             genderFemaleButton.tintColor = .black
             genderFemaleButton.backgroundColor = .white
-            genderFemaleButton.borderColor = .systemGray5
+            genderFemaleButton.borderColor = UIColor(named: "borderColor1")
         }
     }
 }
