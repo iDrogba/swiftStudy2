@@ -23,7 +23,7 @@ extension CALayer {
         shadowRadius = blur / 2.0
     }
     
-    func addBorder(_ arr_edge: [UIRectEdge], color: UIColor, width: CGFloat) {
+    func addBorder(_ arr_edge: [UIRectEdge], color: UIColor, width: CGFloat, cornerRadius: CGFloat) {
         for edge in arr_edge {
             let border = CALayer()
             switch edge {
@@ -42,7 +42,8 @@ extension CALayer {
             default:
                 break
             }
-            border.backgroundColor = color.cgColor;
+            border.cornerRadius = cornerRadius
+            border.backgroundColor = color.cgColor
             self.addSublayer(border)
         }
     }

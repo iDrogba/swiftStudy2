@@ -68,13 +68,21 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-Sw-RJq">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-Sw-RJq" customClass="FormTextField" customModule="MoYeoRunToy" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="30" width="366" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="fJJ-xG-g9f"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -268,6 +276,11 @@
             <point key="canvasLocation" x="249" y="49"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="kT2-Sw-RJq">
+            <size key="intrinsicContentSize" width="33" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Rectangle 142.png" width="123" height="123"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
