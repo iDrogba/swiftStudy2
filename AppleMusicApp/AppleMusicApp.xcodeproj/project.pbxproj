@@ -170,9 +170,9 @@
 		3F0EEC2925F61FB30050F689 /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				3FEC665425FB9F92002B6306 /* Player.storyboard */,
 				3FEC665925FB9FCB002B6306 /* PlayerViewController.swift */,
 				3FEC665A25FB9FCB002B6306 /* SimplePlayer.swift */,
-				3FEC665425FB9F92002B6306 /* Player.storyboard */,
 			);
 			path = Player;
 			sourceTree = "<group>";

@@ -9,7 +9,7 @@
 import AVFoundation
 
 class SimplePlayer {
-    // TODO: 싱글톤 만들기, 왜 만드는가? --> 앱 전반에 걸쳐 돌려쓰기위해, 필요할때 불러쓰기
+    // TODO: 싱글톤 만들기 --> 앱 전반에 걸쳐 돌려쓰기위해, 필요할때 불러쓰기
     static let shared = SimplePlayer()
     
     private let player = AVPlayer()
